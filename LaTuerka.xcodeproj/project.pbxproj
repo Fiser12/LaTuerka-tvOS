@@ -1,0 +1,407 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5FB77EB81C6BAA7D007C4858 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB77EB71C6BAA7D007C4858 /* AppDelegate.swift */; };
+		5FB77EBA1C6BAA7D007C4858 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB77EB91C6BAA7D007C4858 /* ViewController.swift */; };
+		5FB77EBD1C6BAA7D007C4858 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FB77EBB1C6BAA7D007C4858 /* Main.storyboard */; };
+		5FB77EBF1C6BAA7D007C4858 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FB77EBE1C6BAA7D007C4858 /* Assets.xcassets */; };
+		5FB77ECA1C6BAA7D007C4858 /* LaTuerkaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB77EC91C6BAA7D007C4858 /* LaTuerkaTests.swift */; };
+		5FB77ED71C6BB561007C4858 /* ProgramaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB77ED61C6BB561007C4858 /* ProgramaCell.swift */; };
+		5FB77ED91C6BB672007C4858 /* ViewHeaderPrograms.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB77ED81C6BB672007C4858 /* ViewHeaderPrograms.swift */; };
+		5FB77EDB1C6BC080007C4858 /* Programa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB77EDA1C6BC080007C4858 /* Programa.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5FB77EC61C6BAA7D007C4858 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5FB77EAC1C6BAA7D007C4858 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5FB77EB31C6BAA7D007C4858;
+			remoteInfo = LaTuerka;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5FB77EB41C6BAA7D007C4858 /* LaTuerka.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LaTuerka.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FB77EB71C6BAA7D007C4858 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5FB77EB91C6BAA7D007C4858 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5FB77EBC1C6BAA7D007C4858 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5FB77EBE1C6BAA7D007C4858 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5FB77EC01C6BAA7D007C4858 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5FB77EC51C6BAA7D007C4858 /* LaTuerkaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LaTuerkaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FB77EC91C6BAA7D007C4858 /* LaTuerkaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaTuerkaTests.swift; sourceTree = "<group>"; };
+		5FB77ECB1C6BAA7D007C4858 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5FB77ED61C6BB561007C4858 /* ProgramaCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgramaCell.swift; sourceTree = "<group>"; };
+		5FB77ED81C6BB672007C4858 /* ViewHeaderPrograms.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewHeaderPrograms.swift; sourceTree = "<group>"; };
+		5FB77EDA1C6BC080007C4858 /* Programa.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Programa.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5FB77EB11C6BAA7D007C4858 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FB77EC21C6BAA7D007C4858 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5FB77EAB1C6BAA7D007C4858 = {
+			isa = PBXGroup;
+			children = (
+				5FB77EB61C6BAA7D007C4858 /* LaTuerka */,
+				5FB77EC81C6BAA7D007C4858 /* LaTuerkaTests */,
+				5FB77EB51C6BAA7D007C4858 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5FB77EB51C6BAA7D007C4858 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5FB77EB41C6BAA7D007C4858 /* LaTuerka.app */,
+				5FB77EC51C6BAA7D007C4858 /* LaTuerkaTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5FB77EB61C6BAA7D007C4858 /* LaTuerka */ = {
+			isa = PBXGroup;
+			children = (
+				5FB77EB71C6BAA7D007C4858 /* AppDelegate.swift */,
+				5FB77EB91C6BAA7D007C4858 /* ViewController.swift */,
+				5FB77EBB1C6BAA7D007C4858 /* Main.storyboard */,
+				5FB77ED81C6BB672007C4858 /* ViewHeaderPrograms.swift */,
+				5FB77EBE1C6BAA7D007C4858 /* Assets.xcassets */,
+				5FB77EC01C6BAA7D007C4858 /* Info.plist */,
+				5FB77ED61C6BB561007C4858 /* ProgramaCell.swift */,
+				5FB77EDA1C6BC080007C4858 /* Programa.swift */,
+			);
+			path = LaTuerka;
+			sourceTree = "<group>";
+		};
+		5FB77EC81C6BAA7D007C4858 /* LaTuerkaTests */ = {
+			isa = PBXGroup;
+			children = (
+				5FB77EC91C6BAA7D007C4858 /* LaTuerkaTests.swift */,
+				5FB77ECB1C6BAA7D007C4858 /* Info.plist */,
+			);
+			path = LaTuerkaTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5FB77EB31C6BAA7D007C4858 /* LaTuerka */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5FB77ECE1C6BAA7D007C4858 /* Build configuration list for PBXNativeTarget "LaTuerka" */;
+			buildPhases = (
+				5FB77EB01C6BAA7D007C4858 /* Sources */,
+				5FB77EB11C6BAA7D007C4858 /* Frameworks */,
+				5FB77EB21C6BAA7D007C4858 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LaTuerka;
+			productName = LaTuerka;
+			productReference = 5FB77EB41C6BAA7D007C4858 /* LaTuerka.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5FB77EC41C6BAA7D007C4858 /* LaTuerkaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5FB77ED11C6BAA7D007C4858 /* Build configuration list for PBXNativeTarget "LaTuerkaTests" */;
+			buildPhases = (
+				5FB77EC11C6BAA7D007C4858 /* Sources */,
+				5FB77EC21C6BAA7D007C4858 /* Frameworks */,
+				5FB77EC31C6BAA7D007C4858 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5FB77EC71C6BAA7D007C4858 /* PBXTargetDependency */,
+			);
+			name = LaTuerkaTests;
+			productName = LaTuerkaTests;
+			productReference = 5FB77EC51C6BAA7D007C4858 /* LaTuerkaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5FB77EAC1C6BAA7D007C4858 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = Fiser;
+				TargetAttributes = {
+					5FB77EB31C6BAA7D007C4858 = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = J6JK54DXZ9;
+					};
+					5FB77EC41C6BAA7D007C4858 = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = J6JK54DXZ9;
+						TestTargetID = 5FB77EB31C6BAA7D007C4858;
+					};
+				};
+			};
+			buildConfigurationList = 5FB77EAF1C6BAA7D007C4858 /* Build configuration list for PBXProject "LaTuerka" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5FB77EAB1C6BAA7D007C4858;
+			productRefGroup = 5FB77EB51C6BAA7D007C4858 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5FB77EB31C6BAA7D007C4858 /* LaTuerka */,
+				5FB77EC41C6BAA7D007C4858 /* LaTuerkaTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5FB77EB21C6BAA7D007C4858 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FB77EBF1C6BAA7D007C4858 /* Assets.xcassets in Resources */,
+				5FB77EBD1C6BAA7D007C4858 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FB77EC31C6BAA7D007C4858 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5FB77EB01C6BAA7D007C4858 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FB77EBA1C6BAA7D007C4858 /* ViewController.swift in Sources */,
+				5FB77ED91C6BB672007C4858 /* ViewHeaderPrograms.swift in Sources */,
+				5FB77EB81C6BAA7D007C4858 /* AppDelegate.swift in Sources */,
+				5FB77EDB1C6BC080007C4858 /* Programa.swift in Sources */,
+				5FB77ED71C6BB561007C4858 /* ProgramaCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FB77EC11C6BAA7D007C4858 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FB77ECA1C6BAA7D007C4858 /* LaTuerkaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5FB77EC71C6BAA7D007C4858 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5FB77EB31C6BAA7D007C4858 /* LaTuerka */;
+			targetProxy = 5FB77EC61C6BAA7D007C4858 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5FB77EBB1C6BAA7D007C4858 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5FB77EBC1C6BAA7D007C4858 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5FB77ECC1C6BAA7D007C4858 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = appletvos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.1;
+			};
+			name = Debug;
+		};
+		5FB77ECD1C6BAA7D007C4858 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.1;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5FB77ECF1C6BAA7D007C4858 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = LaTuerka/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = fiserCode.LaTuerka;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5FB77ED01C6BAA7D007C4858 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = LaTuerka/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = fiserCode.LaTuerka;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		5FB77ED21C6BAA7D007C4858 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = LaTuerkaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = fiserCode.LaTuerkaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LaTuerka.app/LaTuerka";
+			};
+			name = Debug;
+		};
+		5FB77ED31C6BAA7D007C4858 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = LaTuerkaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = fiserCode.LaTuerkaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LaTuerka.app/LaTuerka";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5FB77EAF1C6BAA7D007C4858 /* Build configuration list for PBXProject "LaTuerka" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5FB77ECC1C6BAA7D007C4858 /* Debug */,
+				5FB77ECD1C6BAA7D007C4858 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5FB77ECE1C6BAA7D007C4858 /* Build configuration list for PBXNativeTarget "LaTuerka" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5FB77ECF1C6BAA7D007C4858 /* Debug */,
+				5FB77ED01C6BAA7D007C4858 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5FB77ED11C6BAA7D007C4858 /* Build configuration list for PBXNativeTarget "LaTuerkaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5FB77ED21C6BAA7D007C4858 /* Debug */,
+				5FB77ED31C6BAA7D007C4858 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5FB77EAC1C6BAA7D007C4858 /* Project object */;
+}
