@@ -10,10 +10,16 @@ import Foundation
 import UIKit
 
 class Crawler{
+    static let sharedInstance = Crawler()
+    var programas:[Programa] = [
+        Programa(Imagen: UIImage(named: "laTuerkaActualidad")!, URL: "http://especiales.publico.es/publico-tv/la-tuerka/tuerka-actualidad", Titulo: "LA TUERKA ACTUALIDAD"),
+        Programa(Imagen: UIImage(named: "elTornillo")!, URL: "http://especiales.publico.es/publico-tv/la-tuerka/el-tornillo", Titulo: "EL TORNILLO"),
+        Programa(Imagen: UIImage(named: "laKlau")!, URL: "http://especiales.publico.es/publico-tv/la-tuerka/la-klau", Titulo: "LA KLAU"),
+        Programa(Imagen: UIImage(named: "laTuerkaNews")!, URL: "http://especiales.publico.es/publico-tv/la-tuerka/tuerka-news", Titulo: "LA TUERKA NEWS"),
+        Programa(Imagen: UIImage(named: "enClaveTuerka")!, URL: "http://especiales.publico.es/publico-tv/la-tuerka/en-clave-tuerka", Titulo: "EN CLAVE TUERKA"),
+        Programa(Imagen: UIImage(named: "otraVueltaDeTuerka")!, URL: "http://especiales.publico.es/publico-tv/la-tuerka/otra-vuelta-de-tuerka", Titulo: "OTRA VUELTA DE TUERKA")]
     
-    var programas:[Programa]
-    init(Programas programas:[Programa]){
-        self.programas = programas
+    private init(){
         for programa in programas
         {
             dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), {
@@ -82,6 +88,7 @@ class Crawler{
         }
         return UIImage()
     }
+
     func saveImage (image: UIImage, path: String ) -> Bool{
         let pngImageData = UIImagePNGRepresentation(image)
         let result = pngImageData!.writeToFile(path, atomically: true)
