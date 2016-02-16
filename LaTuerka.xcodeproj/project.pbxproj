@@ -7,14 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5F8FE61A1C6D3576007C4858 /* Crawler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F8FE6191C6D3576007C4858 /* Crawler.swift */; };
+		5F8FE6371C6D483A007C4858 /* TFHpple.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F8FE6321C6D483A007C4858 /* TFHpple.m */; };
+		5F8FE6381C6D483A007C4858 /* TFHppleElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F8FE6341C6D483A007C4858 /* TFHppleElement.m */; };
+		5F8FE6391C6D483A007C4858 /* XPathQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F8FE6361C6D483A007C4858 /* XPathQuery.m */; };
+		5F8FE63E1C6D51B8007C4858 /* Episodio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F8FE63D1C6D51B8007C4858 /* Episodio.swift */; };
+		5F8FE6401C6D58D6007C4858 /* libxml2.2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F8FE63F1C6D58D6007C4858 /* libxml2.2.tbd */; };
+		5F8FE6451C6D9DB8007C4858 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F8FE6441C6D9DB8007C4858 /* Assets.xcassets */; };
 		5FB77EB81C6BAA7D007C4858 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB77EB71C6BAA7D007C4858 /* AppDelegate.swift */; };
 		5FB77EBA1C6BAA7D007C4858 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB77EB91C6BAA7D007C4858 /* ViewController.swift */; };
 		5FB77EBD1C6BAA7D007C4858 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FB77EBB1C6BAA7D007C4858 /* Main.storyboard */; };
-		5FB77EBF1C6BAA7D007C4858 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FB77EBE1C6BAA7D007C4858 /* Assets.xcassets */; };
 		5FB77ECA1C6BAA7D007C4858 /* LaTuerkaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB77EC91C6BAA7D007C4858 /* LaTuerkaTests.swift */; };
 		5FB77ED71C6BB561007C4858 /* ProgramaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB77ED61C6BB561007C4858 /* ProgramaCell.swift */; };
 		5FB77ED91C6BB672007C4858 /* ViewHeaderPrograms.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB77ED81C6BB672007C4858 /* ViewHeaderPrograms.swift */; };
 		5FB77EDB1C6BC080007C4858 /* Programa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB77EDA1C6BC080007C4858 /* Programa.swift */; };
+		5FFAEB071C70F37A007C4858 /* ProgramaSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFAEB061C70F37A007C4858 /* ProgramaSelector.swift */; };
+		5FFAEB0B1C70FED7007C4858 /* EpisodioCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFAEB0A1C70FED7007C4858 /* EpisodioCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,11 +36,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5F8FE6191C6D3576007C4858 /* Crawler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Crawler.swift; sourceTree = "<group>"; };
+		5F8FE6301C6D4839007C4858 /* LaTuerka-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LaTuerka-Bridging-Header.h"; sourceTree = "<group>"; };
+		5F8FE6311C6D483A007C4858 /* TFHpple.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFHpple.h; sourceTree = "<group>"; };
+		5F8FE6321C6D483A007C4858 /* TFHpple.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFHpple.m; sourceTree = "<group>"; };
+		5F8FE6331C6D483A007C4858 /* TFHppleElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFHppleElement.h; sourceTree = "<group>"; };
+		5F8FE6341C6D483A007C4858 /* TFHppleElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFHppleElement.m; sourceTree = "<group>"; };
+		5F8FE6351C6D483A007C4858 /* XPathQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPathQuery.h; sourceTree = "<group>"; };
+		5F8FE6361C6D483A007C4858 /* XPathQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPathQuery.m; sourceTree = "<group>"; };
+		5F8FE63D1C6D51B8007C4858 /* Episodio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Episodio.swift; sourceTree = "<group>"; };
+		5F8FE63F1C6D58D6007C4858 /* libxml2.2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.2.tbd; path = usr/lib/libxml2.2.tbd; sourceTree = SDKROOT; };
+		5F8FE6441C6D9DB8007C4858 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5FB77EB41C6BAA7D007C4858 /* LaTuerka.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LaTuerka.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FB77EB71C6BAA7D007C4858 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5FB77EB91C6BAA7D007C4858 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5FB77EBC1C6BAA7D007C4858 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		5FB77EBE1C6BAA7D007C4858 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5FB77EC01C6BAA7D007C4858 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5FB77EC51C6BAA7D007C4858 /* LaTuerkaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LaTuerkaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FB77EC91C6BAA7D007C4858 /* LaTuerkaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaTuerkaTests.swift; sourceTree = "<group>"; };
@@ -40,6 +58,8 @@
 		5FB77ED61C6BB561007C4858 /* ProgramaCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgramaCell.swift; sourceTree = "<group>"; };
 		5FB77ED81C6BB672007C4858 /* ViewHeaderPrograms.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewHeaderPrograms.swift; sourceTree = "<group>"; };
 		5FB77EDA1C6BC080007C4858 /* Programa.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Programa.swift; sourceTree = "<group>"; };
+		5FFAEB061C70F37A007C4858 /* ProgramaSelector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgramaSelector.swift; sourceTree = "<group>"; };
+		5FFAEB0A1C70FED7007C4858 /* EpisodioCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EpisodioCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F8FE6401C6D58D6007C4858 /* libxml2.2.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,9 +81,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5F8FE63A1C6D4851007C4858 /* TFHpple */ = {
+			isa = PBXGroup;
+			children = (
+				5F8FE6311C6D483A007C4858 /* TFHpple.h */,
+				5F8FE6321C6D483A007C4858 /* TFHpple.m */,
+				5F8FE6331C6D483A007C4858 /* TFHppleElement.h */,
+				5F8FE6341C6D483A007C4858 /* TFHppleElement.m */,
+				5F8FE6351C6D483A007C4858 /* XPathQuery.h */,
+				5F8FE6361C6D483A007C4858 /* XPathQuery.m */,
+			);
+			name = TFHpple;
+			sourceTree = "<group>";
+		};
+		5F8FE6411C6D9063007C4858 /* Ressources */ = {
+			isa = PBXGroup;
+			children = (
+				5FFAEB0F1C712442007C4858 /* Images */,
+			);
+			name = Ressources;
+			sourceTree = "<group>";
+		};
 		5FB77EAB1C6BAA7D007C4858 = {
 			isa = PBXGroup;
 			children = (
+				5F8FE6411C6D9063007C4858 /* Ressources */,
+				5F8FE63F1C6D58D6007C4858 /* libxml2.2.tbd */,
+				5F8FE6441C6D9DB8007C4858 /* Assets.xcassets */,
 				5FB77EB61C6BAA7D007C4858 /* LaTuerka */,
 				5FB77EC81C6BAA7D007C4858 /* LaTuerkaTests */,
 				5FB77EB51C6BAA7D007C4858 /* Products */,
@@ -81,14 +126,12 @@
 		5FB77EB61C6BAA7D007C4858 /* LaTuerka */ = {
 			isa = PBXGroup;
 			children = (
-				5FB77EB71C6BAA7D007C4858 /* AppDelegate.swift */,
-				5FB77EB91C6BAA7D007C4858 /* ViewController.swift */,
 				5FB77EBB1C6BAA7D007C4858 /* Main.storyboard */,
-				5FB77ED81C6BB672007C4858 /* ViewHeaderPrograms.swift */,
-				5FB77EBE1C6BAA7D007C4858 /* Assets.xcassets */,
-				5FB77EC01C6BAA7D007C4858 /* Info.plist */,
-				5FB77ED61C6BB561007C4858 /* ProgramaCell.swift */,
-				5FB77EDA1C6BC080007C4858 /* Programa.swift */,
+				5FFAEB0D1C70FF82007C4858 /* DataObjects */,
+				5FFAEB0C1C70FF36007C4858 /* Controller */,
+				5FFAEB0E1C70FFEC007C4858 /* Data */,
+				5F8FE6301C6D4839007C4858 /* LaTuerka-Bridging-Header.h */,
+				5F8FE63A1C6D4851007C4858 /* TFHpple */,
 			);
 			path = LaTuerka;
 			sourceTree = "<group>";
@@ -100,6 +143,44 @@
 				5FB77ECB1C6BAA7D007C4858 /* Info.plist */,
 			);
 			path = LaTuerkaTests;
+			sourceTree = "<group>";
+		};
+		5FFAEB0C1C70FF36007C4858 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5F8FE6191C6D3576007C4858 /* Crawler.swift */,
+				5FB77EB71C6BAA7D007C4858 /* AppDelegate.swift */,
+				5FB77ED81C6BB672007C4858 /* ViewHeaderPrograms.swift */,
+				5FFAEB061C70F37A007C4858 /* ProgramaSelector.swift */,
+				5FB77EB91C6BAA7D007C4858 /* ViewController.swift */,
+				5FFAEB0A1C70FED7007C4858 /* EpisodioCell.swift */,
+				5FB77ED61C6BB561007C4858 /* ProgramaCell.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		5FFAEB0D1C70FF82007C4858 /* DataObjects */ = {
+			isa = PBXGroup;
+			children = (
+				5FB77EDA1C6BC080007C4858 /* Programa.swift */,
+				5F8FE63D1C6D51B8007C4858 /* Episodio.swift */,
+			);
+			name = DataObjects;
+			sourceTree = "<group>";
+		};
+		5FFAEB0E1C70FFEC007C4858 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				5FB77EC01C6BAA7D007C4858 /* Info.plist */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+		5FFAEB0F1C712442007C4858 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -185,7 +266,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5FB77EBF1C6BAA7D007C4858 /* Assets.xcassets in Resources */,
+				5F8FE6451C6D9DB8007C4858 /* Assets.xcassets in Resources */,
 				5FB77EBD1C6BAA7D007C4858 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -204,10 +285,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F8FE6381C6D483A007C4858 /* TFHppleElement.m in Sources */,
+				5FFAEB0B1C70FED7007C4858 /* EpisodioCell.swift in Sources */,
+				5F8FE61A1C6D3576007C4858 /* Crawler.swift in Sources */,
 				5FB77EBA1C6BAA7D007C4858 /* ViewController.swift in Sources */,
 				5FB77ED91C6BB672007C4858 /* ViewHeaderPrograms.swift in Sources */,
+				5F8FE6391C6D483A007C4858 /* XPathQuery.m in Sources */,
+				5F8FE6371C6D483A007C4858 /* TFHpple.m in Sources */,
 				5FB77EB81C6BAA7D007C4858 /* AppDelegate.swift in Sources */,
+				5F8FE63E1C6D51B8007C4858 /* Episodio.swift in Sources */,
 				5FB77EDB1C6BC080007C4858 /* Programa.swift in Sources */,
+				5FFAEB071C70F37A007C4858 /* ProgramaSelector.swift in Sources */,
 				5FB77ED71C6BB561007C4858 /* ProgramaCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -277,6 +365,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(SDKROOT)/usr/include/libxml2";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = appletvos;
@@ -315,6 +404,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(SDKROOT)/usr/include/libxml2";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
@@ -328,10 +418,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = LaTuerka/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = fiserCode.LaTuerka;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LaTuerka/LaTuerka-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -340,10 +433,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = LaTuerka/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = fiserCode.LaTuerka;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LaTuerka/LaTuerka-Bridging-Header.h";
 			};
 			name = Release;
 		};

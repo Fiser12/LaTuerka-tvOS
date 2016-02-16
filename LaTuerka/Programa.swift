@@ -12,9 +12,19 @@ import UIKit
 class Programa{
     var url: String = ""
     var image: UIImage
-    init (Imagen image: UIImage, URL url: String){
+    var episodios: [Episodio]
+    var titulo: String
+    init()
+    {
+        self.episodios = []
+        self.titulo = ""
+        self.url = ""
+        self.image = UIImage()
+    }
+    init (Imagen image: UIImage, URL url: String, Titulo titulo: String){
         self.image = image
         self.url = url
+        self.episodios = []
+        self.titulo = titulo
     }
-    
 }

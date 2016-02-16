@@ -2,17 +2,19 @@
 <document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" initialViewController="UaL-Ye-H8p">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="EgP-zk-sBN">
             <objects>
-                <collectionViewController id="UaL-Ye-H8p" customClass="ViewController" customModule="LaTuerka" customModuleProvider="target" sceneMemberID="viewController">
+                <collectionViewController storyboardIdentifier="principal" id="UaL-Ye-H8p" customClass="ViewController" customModule="LaTuerka" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="ffn-Nc-mj8">
                         <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <gestureRecognizers/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="100" minimumInteritemSpacing="10" id="77d-eG-egp">
-                            <size key="itemSize" width="500" height="280"/>
+                            <size key="itemSize" width="450" height="320"/>
                             <size key="headerReferenceSize" width="1920" height="150"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="50" minY="50" maxX="50" maxY="50"/>
@@ -20,31 +22,65 @@
                         <imageView key="backgroundView" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" id="XFo-dA-xQY">
                             <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <gestureRecognizers/>
                         </imageView>
                         <cells>
                             <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="ProgramaCell" reuseIdentifier="ProgramaCell" id="165-yu-Jyk" customClass="ProgramaCell" customModule="LaTuerka" customModuleProvider="target">
-                                <rect key="frame" x="50" y="200" width="500" height="280"/>
+                                <rect key="frame" x="50" y="200" width="450" height="320"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="500" height="280"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="450" height="320"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Cg9-TZ-on9">
-                                            <rect key="frame" x="25" y="15" width="450" height="250"/>
+                                            <rect key="frame" x="0.0" y="8" width="450" height="250"/>
+                                            <gestureRecognizers/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="250" id="4Cc-tu-CQg"/>
                                                 <constraint firstAttribute="width" constant="450" id="Nwg-sF-3bl"/>
                                             </constraints>
                                         </imageView>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="cellBar" image="barra" translatesAutoresizingMaskIntoConstraints="NO" id="YwD-TT-70V">
+                                            <rect key="frame" x="0.0" y="247" width="450" height="65"/>
+                                            <accessibility key="accessibilityConfiguration" identifier="cellBar"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="65" id="auc-8B-rpg"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="titleCell" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qfL-e8-GTr">
+                                            <rect key="frame" x="13" y="247" width="425" height="65"/>
+                                            <accessibility key="accessibilityConfiguration" identifier="cellTitle"/>
+                                            <attributedString key="attributedText">
+                                                <fragment content="La Tuerka News">
+                                                    <attributes>
+                                                        <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <font key="NSFont" size="30" name="HelveticaNeue-Bold"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                            <nil key="highlightedColor"/>
+                                            <color key="shadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </label>
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
                                 <constraints>
-                                    <constraint firstItem="Cg9-TZ-on9" firstAttribute="centerY" secondItem="165-yu-Jyk" secondAttribute="centerY" id="GWH-d9-Aoo"/>
+                                    <constraint firstItem="YwD-TT-70V" firstAttribute="centerX" secondItem="165-yu-Jyk" secondAttribute="centerX" id="7l6-T0-ywD"/>
+                                    <constraint firstItem="qfL-e8-GTr" firstAttribute="width" secondItem="YwD-TT-70V" secondAttribute="width" constant="-25" id="EqS-9u-oTb"/>
+                                    <constraint firstAttribute="bottomMargin" secondItem="YwD-TT-70V" secondAttribute="bottom" id="H8E-KV-QXl"/>
+                                    <constraint firstItem="qfL-e8-GTr" firstAttribute="centerY" secondItem="YwD-TT-70V" secondAttribute="centerY" id="MAP-CW-cux"/>
+                                    <constraint firstItem="qfL-e8-GTr" firstAttribute="height" secondItem="YwD-TT-70V" secondAttribute="height" id="Q7u-00-jnW"/>
+                                    <constraint firstItem="qfL-e8-GTr" firstAttribute="centerX" secondItem="YwD-TT-70V" secondAttribute="centerX" id="UNa-rs-45n"/>
                                     <constraint firstItem="Cg9-TZ-on9" firstAttribute="centerX" secondItem="165-yu-Jyk" secondAttribute="centerX" id="bCl-Oh-BER"/>
+                                    <constraint firstItem="Cg9-TZ-on9" firstAttribute="top" secondItem="165-yu-Jyk" secondAttribute="topMargin" id="fGg-Ah-EQL" userLabel="Img.top = topMargin"/>
+                                    <constraint firstItem="YwD-TT-70V" firstAttribute="width" secondItem="165-yu-Jyk" secondAttribute="width" id="xnC-66-dho"/>
                                 </constraints>
                                 <connections>
+                                    <outlet property="barra" destination="YwD-TT-70V" id="d1J-3e-42l"/>
+                                    <outlet property="cellTitle" destination="qfL-e8-GTr" id="dwD-xH-M9E"/>
                                     <outlet property="img" destination="Cg9-TZ-on9" id="E1a-jf-H8o"/>
+                                    <segue destination="cIH-Bb-5EA" kind="show" id="AIX-BS-efS"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
@@ -86,7 +122,134 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C5t-lD-0dc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-315" y="-921"/>
+            <point key="canvasLocation" x="-311" y="-905"/>
+        </scene>
+        <!--Programa Selector-->
+        <scene sceneID="Bb8-p9-gmf">
+            <objects>
+                <collectionViewController storyboardIdentifier="capitulos" id="cIH-Bb-5EA" customClass="ProgramaSelector" customModule="LaTuerka" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="LSz-jx-d5J">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <gestureRecognizers/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="100" minimumInteritemSpacing="10" id="qMp-0S-2SK">
+                            <size key="itemSize" width="450" height="320"/>
+                            <size key="headerReferenceSize" width="1920" height="150"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="50" minY="50" maxX="50" maxY="50"/>
+                        </collectionViewFlowLayout>
+                        <imageView key="backgroundView" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" id="G0P-bI-O63">
+                            <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <gestureRecognizers/>
+                        </imageView>
+                        <cells>
+                            <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="EpisodioCell" reuseIdentifier="EpisodioCell" id="r5t-xn-8G4" customClass="EpisodioCell" customModule="LaTuerka" customModuleProvider="target">
+                                <rect key="frame" x="50" y="200" width="450" height="320"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="450" height="320"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Nhb-2R-rSG">
+                                            <rect key="frame" x="0.0" y="8" width="450" height="250"/>
+                                            <gestureRecognizers/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="250" id="Bon-oO-vfv"/>
+                                                <constraint firstAttribute="width" constant="450" id="VSm-5E-FoP"/>
+                                            </constraints>
+                                        </imageView>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="cellBar" image="barra" translatesAutoresizingMaskIntoConstraints="NO" id="yCS-lL-BYN">
+                                            <rect key="frame" x="0.0" y="247" width="450" height="65"/>
+                                            <accessibility key="accessibilityConfiguration" identifier="cellBar"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="65" id="D4J-9K-25s"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="titleCell" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xAY-XL-srE">
+                                            <rect key="frame" x="13" y="247" width="425" height="65"/>
+                                            <accessibility key="accessibilityConfiguration" identifier="cellTitle"/>
+                                            <attributedString key="attributedText">
+                                                <fragment content="La Tuerka News">
+                                                    <attributes>
+                                                        <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <font key="NSFont" size="30" name="HelveticaNeue-Bold"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                            <nil key="highlightedColor"/>
+                                            <color key="shadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <constraints>
+                                    <constraint firstItem="Nhb-2R-rSG" firstAttribute="centerX" secondItem="r5t-xn-8G4" secondAttribute="centerX" id="5He-cn-VDE"/>
+                                    <constraint firstItem="xAY-XL-srE" firstAttribute="width" secondItem="yCS-lL-BYN" secondAttribute="width" constant="-25" id="6NV-ID-Lq7"/>
+                                    <constraint firstItem="xAY-XL-srE" firstAttribute="height" secondItem="yCS-lL-BYN" secondAttribute="height" id="Ayd-9g-BMn"/>
+                                    <constraint firstItem="Nhb-2R-rSG" firstAttribute="top" secondItem="r5t-xn-8G4" secondAttribute="topMargin" id="DQY-vG-nKa" userLabel="Img.top = topMargin"/>
+                                    <constraint firstAttribute="bottomMargin" secondItem="yCS-lL-BYN" secondAttribute="bottom" id="PP0-pw-AQI"/>
+                                    <constraint firstItem="xAY-XL-srE" firstAttribute="centerY" secondItem="yCS-lL-BYN" secondAttribute="centerY" id="Pec-HH-0fb"/>
+                                    <constraint firstItem="yCS-lL-BYN" firstAttribute="centerX" secondItem="r5t-xn-8G4" secondAttribute="centerX" id="WFZ-Nl-HjH"/>
+                                    <constraint firstItem="xAY-XL-srE" firstAttribute="centerX" secondItem="yCS-lL-BYN" secondAttribute="centerX" id="plh-6n-RVS"/>
+                                    <constraint firstItem="yCS-lL-BYN" firstAttribute="width" secondItem="r5t-xn-8G4" secondAttribute="width" id="y7C-N4-urY"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="barra" destination="yCS-lL-BYN" id="TTp-nu-jaD"/>
+                                    <outlet property="cellTitle" destination="xAY-XL-srE" id="0Z6-us-8N7"/>
+                                    <outlet property="img" destination="Nhb-2R-rSG" id="bL7-D4-duv"/>
+                                    <segue destination="kJd-Ie-bG3" kind="show" id="zMj-8f-y8f"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="Header" reuseIdentifier="Header" id="nON-iO-AQE" customClass="ViewHeaderPrograms" customModule="LaTuerka" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="1920" height="150"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="barra" translatesAutoresizingMaskIntoConstraints="NO" id="jur-fp-A7N">
+                                    <rect key="frame" x="0.0" y="50" width="1920" height="49"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="49" id="B7G-s8-gVX"/>
+                                    </constraints>
+                                </imageView>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="5FM-98-N3J">
+                                    <rect key="frame" x="890" y="0.0" width="140" height="150"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="140" id="3ur-CQ-B5x"/>
+                                        <constraint firstAttribute="height" constant="150" id="rsi-Lv-G26"/>
+                                    </constraints>
+                                </imageView>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="5FM-98-N3J" firstAttribute="centerY" secondItem="nON-iO-AQE" secondAttribute="centerY" id="9Tt-eO-Bbh"/>
+                                <constraint firstItem="jur-fp-A7N" firstAttribute="centerY" secondItem="nON-iO-AQE" secondAttribute="centerY" id="HfO-Cl-9S1"/>
+                                <constraint firstItem="5FM-98-N3J" firstAttribute="centerX" secondItem="nON-iO-AQE" secondAttribute="centerX" id="LhI-34-uVx"/>
+                                <constraint firstItem="jur-fp-A7N" firstAttribute="width" secondItem="nON-iO-AQE" secondAttribute="width" id="V2p-e7-LHW"/>
+                                <constraint firstItem="jur-fp-A7N" firstAttribute="centerX" secondItem="nON-iO-AQE" secondAttribute="centerX" id="XUo-yD-eJ1"/>
+                            </constraints>
+                            <connections>
+                                <outlet property="barra" destination="jur-fp-A7N" id="CnF-73-4Tj"/>
+                                <outlet property="logo" destination="5FM-98-N3J" id="w94-ff-vIc"/>
+                            </connections>
+                        </collectionReusableView>
+                        <connections>
+                            <outlet property="dataSource" destination="cIH-Bb-5EA" id="bJd-dU-tmt"/>
+                            <outlet property="delegate" destination="cIH-Bb-5EA" id="oKC-wc-GDZ"/>
+                        </connections>
+                    </collectionView>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hYE-KU-wrI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2113" y="-897"/>
+        </scene>
+        <!--AV Player View Controller-->
+        <scene sceneID="1Mo-13-HoJ">
+            <objects>
+                <avPlayerViewController videoGravity="AVLayerVideoGravityResizeAspect" id="kJd-Ie-bG3" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xzb-FZ-JDw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4726" y="-911"/>
         </scene>
     </scenes>
     <resources>
