@@ -27,7 +27,6 @@ class EpisodioCell: UICollectionViewCell {
     }
     override func awakeFromNib() {
         super.awakeFromNib()
-        
         // These properties are also exposed in Interface Builder.
         img.adjustsImageWhenAncestorFocused = true
         img.clipsToBounds = false

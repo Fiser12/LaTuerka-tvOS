@@ -93,70 +93,16 @@ class ProgramaSelector: UICollectionViewController {
     /**
      Este método se encarga de establecer el foco
      */
+   
     override func didUpdateFocusInContext(context: UIFocusUpdateContext, withAnimationCoordinator coordinator: UIFocusAnimationCoordinator) {
-        super.didUpdateFocusInContext(context, withAnimationCoordinator: coordinator)
-        
-        if let prev = context.previouslyFocusedView as? EpisodioCell{
-            UIView.animateWithDuration(0.1, animations: {() -> Void in
-                prev.img.frame.size = self.defaultSize
-                prev.barra.frame.origin.y -= 25
-                prev.barra.frame.size = CGSizeMake(450, 65)
-                prev.cellTitle.frame.origin.y -= 25
-                prev.cellTitle.frame.origin.x -= 15
-                prev.cellTitle.transform = CGAffineTransformMakeScale(0.9,0.9);
-                
-            })
-        }
-        if let next = context.nextFocusedView as? EpisodioCell{
-            UIView.animateWithDuration(0.1, animations: {() -> Void in
-                next.img.frame.size = self.focusSize
-                next.barra.frame.origin.y += 25
-                next.barra.frame.size = CGSizeMake(495, 71)
-                next.cellTitle.frame.origin.y += 25
-                next.cellTitle.frame.origin.x += 15
-                next.cellTitle.transform = CGAffineTransformMakeScale(1.1,1.1)
-                
-            })
-        }
+        coordinator.addCoordinatedAnimations({
+            context.previouslyFocusedView?.transform = CGAffineTransformIdentity
+            context.previouslyFocusedView?.layer.shadowColor = UIColor.clearColor().CGColor
+            context.nextFocusedView?.transform = CGAffineTransformMakeScale(1.10, 1.10)
+            context.nextFocusedView?.layer.shadowColor = UIColor.blackColor().CGColor
+            context.nextFocusedView?.layer.shadowRadius = 8.0
+            context.nextFocusedView?.layer.shadowOffset = CGSizeMake(0,2)
+            context.nextFocusedView?.layer.shadowOpacity = 1.0
+            }, completion: nil)
     }
-    
-    // MARK: UICollectionViewDelegate
-    
-    override func collectionView(collectionView: UICollectionView, willDisplayCell cell: UICollectionViewCell, forItemAtIndexPath indexPath: NSIndexPath) {
-        guard let cell = cell as? EpisodioCell else { fatalError("Expected to display a `DataItemCollectionViewCell`.") }
-        composeCell(cell)
-    }
-
-    func composeCell(cell: EpisodioCell) {
-        cell.img.alpha = 1.0
-        
-        /*
-        Initial rendering of a jpeg image can be expensive. To avoid stalling
-        the main thread, we create an operation to process the `DataItem`'s
-        image before updating the cell's image view.
-        
-        The execution block is added after the operation is created to allow
-        the block to check if the operation has been cancelled.
-        */
-        let processImageOperation = NSBlockOperation()
-        
-        processImageOperation.addExecutionBlock { [unowned processImageOperation] in
-            // Ensure the operation has not been cancelled.
-            guard !processImageOperation.cancelled else { return }
-            
-            
-            // Store the processed image in the cache.
-            
-            NSOperationQueue.mainQueue().addOperationWithBlock {
-                // Check that the cell is still showing the same `DataItem`.
-                
-                // Update the cell's `UIImageView` and then fade it into view.
-                cell.img.alpha = 0.0
-                
-                UIView.animateWithDuration(0.25) {
-                    cell.img.alpha = 1.0
-                }
-            }
-        }
-    }   
 }

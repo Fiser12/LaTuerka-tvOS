@@ -77,5 +77,16 @@ class ViewController: UICollectionViewController, UIGestureRecognizerDelegate {
         let cell:ProgramaCell = sender as! ProgramaCell
         destinoController.data = cell.programa
     }
+    override func didUpdateFocusInContext(context: UIFocusUpdateContext, withAnimationCoordinator coordinator: UIFocusAnimationCoordinator) {
+        coordinator.addCoordinatedAnimations({
+            context.previouslyFocusedView?.transform = CGAffineTransformIdentity
+            context.previouslyFocusedView?.layer.shadowColor = UIColor.clearColor().CGColor
+            context.nextFocusedView?.transform = CGAffineTransformMakeScale(1.10, 1.10)
+            context.nextFocusedView?.layer.shadowColor = UIColor.blackColor().CGColor
+            context.nextFocusedView?.layer.shadowRadius = 8.0
+            context.nextFocusedView?.layer.shadowOffset = CGSizeMake(0,2)
+            context.nextFocusedView?.layer.shadowOpacity = 1.0
+            }, completion: nil)
+    }
 }
 
