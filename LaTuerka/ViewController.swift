@@ -10,8 +10,6 @@ import UIKit
 
 class ViewController: UICollectionViewController, UIGestureRecognizerDelegate {
     //Los programvarque vamos a tener, los precargamos aquí para que consuma menos
-    let defaultSize = CGSizeMake(450,250)
-    let focusSize = CGSizeMake(495, 275)
     override func viewDidLoad() {
         super.viewDidLoad()
         self.collectionView?.delegate = self

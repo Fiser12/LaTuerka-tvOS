@@ -22,15 +22,35 @@ class Crawler{
     private init(){
         for programa in programas
         {
+            self.descargarPortadas(URL: programa.url, Programa: programa)
+        }
+        for programa in programas
+        {
             dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), {
                 self.descargarProgramasBucle(Programa: programa, URL: programa.url)
                 dispatch_async(dispatch_get_main_queue(), {
-                    programa.episodios = programa.episodios.sort({ $0.data.compare($1.data) == NSComparisonResult.OrderedDescending })
-
                     });
                 });
         }
     }
+    private func descargarPortadas(URL urlActual:String, Programa programa:Programa)
+    {
+        if let urlNS:NSURL = NSURL(string: urlActual)
+        {
+            if let data:NSData = NSData(contentsOfURL: urlNS)
+            {
+                let doc = TFHpple(HTMLData: data)
+                if let elements = doc.searchWithXPathQuery("//ul[@class='program-list']/li") as? [TFHppleElement] {
+                    let urlTag:TFHppleElement! = (elements.first!.searchWithXPathQuery("//a") as? [TFHppleElement])?.first
+                    var url:String = "http://especiales.publico.es"+(urlTag?.objectForKey("href"))!
+                    url = obtenerURLVideo(URL: url)
+                    let imageURL:String! = (urlTag?.searchWithXPathQuery("//img") as? [TFHppleElement])?.first?.objectForKey("src")
+                    programa.image = downloadImage(imageURL)
+                }
+            }
+        }
+    }
+
     func descargarProgramasBucle(Programa programa: Programa, URL urlActual: String)
     {
         
@@ -83,7 +103,7 @@ class Crawler{
         if let urlNS:NSURL = NSURL(string: url){
                 if let data:NSData = NSData(contentsOfURL: urlNS){ //make sure your image in this url does exist, otherwise unwrap in a if let check
                     let imagen:UIImage! = UIImage(data: data)
-                    return imageResize(imagen, sizeChange:  CGSizeMake(495, 275))
+                    return imageByCombiningImage(imageResize(imagen, sizeChange:  CGSizeMake(495, 320)))
                 }
         }
         return UIImage()
@@ -103,8 +123,6 @@ class Crawler{
         let scaledImage = UIGraphicsGetImageFromCurrentImageContext()
         return scaledImage
     }
-
-
 
     func loadImageFromPath(path: String) -> UIImage? {
         let image = UIImage(contentsOfFile: path)
@@ -131,6 +149,18 @@ class Crawler{
 
         return urlFinal
     }
+    func imageByCombiningImage(firstImage: UIImage) -> UIImage {
+        var image: UIImage? = nil
+        let secondImage:UIImage = UIImage(named: "barra")!
+        let newImageSize: CGSize = CGSizeMake(max(firstImage.size.width, secondImage.size.width), firstImage.size.height+80)
+        UIGraphicsBeginImageContext(newImageSize)
+        firstImage.drawAtPoint(CGPointMake(0,0))
+        secondImage.drawAtPoint(CGPointMake(0,275))
+        image = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        return image!
+    }
+    
 }
 extension String {
     var length: Int {

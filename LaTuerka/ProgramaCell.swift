@@ -20,10 +20,8 @@ class ProgramaCell: UICollectionViewCell {
         self.programa = programa
         self.img.image = programa.image
         self.url = programa.url
-        self.barra.image = UIImage(named: "barra")
-        self.cellTitle.text = programa.titulo
         self.cellTitle.font = UIFont(name:"HelveticaNeue-Bold",size: 24)
-
+        self.cellTitle.text = programa.titulo
     }
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -31,8 +29,7 @@ class ProgramaCell: UICollectionViewCell {
         // These properties are also exposed in Interface Builder.
         img.adjustsImageWhenAncestorFocused = true
         img.clipsToBounds = false
-        barra.adjustsImageWhenAncestorFocused = true
-        barra.clipsToBounds = false
+        cellTitle.adjustsFontSizeToFitWidth = true
         
     }
     

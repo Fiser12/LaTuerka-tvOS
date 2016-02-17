@@ -20,8 +20,6 @@ class EpisodioCell: UICollectionViewCell {
         self.episodio = episodio
         self.img.image = episodio.image
         self.url = episodio.url
-        self.barra.image = UIImage(named: "barra")
-        self.barra.contentMode = UIViewContentMode.ScaleAspectFit
         self.cellTitle.text = episodio.titulo
         self.cellTitle.font = UIFont(name:"HelveticaNeue-Bold",size: 24)
     }
@@ -30,8 +28,6 @@ class EpisodioCell: UICollectionViewCell {
         // These properties are also exposed in Interface Builder.
         img.adjustsImageWhenAncestorFocused = true
         img.clipsToBounds = false
-        barra.adjustsImageWhenAncestorFocused = true
-        barra.clipsToBounds = false
     }
     
     // MARK: UICollectionReusableView

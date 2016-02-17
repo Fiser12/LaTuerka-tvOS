@@ -13,10 +13,7 @@ import MediaPlayer
 
 private let reuseIdentifier = "Cell"
 class ProgramaSelector: UICollectionViewController {
-    var data:Programa = Programa()
-    let defaultSize = CGSizeMake(450,250)
-    let focusSize = CGSizeMake(495, 275)
-    
+    var data:Programa = Programa()   
     var avPlayer:AVPlayer = AVPlayer()
     override func viewDidLoad() {
         super.viewDidLoad()
