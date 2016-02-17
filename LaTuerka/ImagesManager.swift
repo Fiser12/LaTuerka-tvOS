@@ -19,17 +19,21 @@ class ImagesManager{
     func loadImageFromPath(path: String) -> UIImage? {
         return UIImage(contentsOfFile: path)
     }
-    func downloadImage(url: String, nombrePrograma: String, fecha: String) -> UIImage! {
+    func downloadImage(url: String, nombrePrograma: String, fecha: String) throws -> UIImage {
         if let urlNS:NSURL = NSURL(string: url){
             let imagePath = fileInDocumentsDirectory(nombrePrograma + "-" + fecha + "-" + urlNS.pathComponents!.last!)
             if let loadedImage = loadImageFromPath(imagePath) {
                 return loadedImage
             } else {
                 if let data:NSData = NSData(contentsOfURL: urlNS){ //make sure your image in this url does exist, otherwise unwrap in a if let check
-                    let imagen:UIImage? = UIImage(data: data)
-                    let imagenProcesada:UIImage! = imageByCombiningImage(imageResize(imagen!, sizeChange:  CGSizeMake(495, 300)))
-                    saveImage(imagenProcesada, path: imagePath)
-                    return imagenProcesada
+                    if let imagen:UIImage = UIImage(data: data){
+                        let imagenProcesada:UIImage = imageByCombiningImage(imageResize(imagen, sizeChange:  CGSizeMake(495, 300)))
+                        saveImage(imagenProcesada, path: imagePath)
+                        return imagenProcesada
+                    }
+                    else{
+                        throw BadImage.Empty
+                    }
                 }
             }
         }
@@ -65,4 +69,7 @@ class ImagesManager{
         return fileURL.path!
         
     }
+}
+enum BadImage: ErrorType {
+    case Empty
 }

@@ -59,7 +59,10 @@ class Crawler: Observable{
                     let imageURL:String! = (urlTag?.searchWithXPathQuery("//img") as? [TFHppleElement])?.first?.objectForKey("src")
                     let dateSTR:String! = ((elements.first!.searchWithXPathQuery("//h4//a//span") as? [TFHppleElement])?.first)?.text()
                     let titulo:String! = ((elements.first!.searchWithXPathQuery("//h3//a") as? [TFHppleElement])?.first)?.text()
-                    programa.image = ImagesManager.sharedInstance.downloadImage(imageURL, nombrePrograma: programa.titulo+"-"+titulo, fecha: dateSTR)
+                    do{
+                        programa.image = try ImagesManager.sharedInstance.downloadImage(imageURL, nombrePrograma: programa.titulo+"-"+titulo, fecha: dateSTR)
+                    } catch {
+                    }
                 }
             }
         }
@@ -98,8 +101,12 @@ class Crawler: Observable{
                         let dateFormatter = NSDateFormatter()
                         dateFormatter.dateFormat = "dd-MM-yyyy"
                         let date = dateFormatter.dateFromString( dateSTR )
-                        let episodio:Episodio = Episodio(URL: url, Imagen: ImagesManager.sharedInstance.downloadImage(imageURL, nombrePrograma: programa.titulo+"-"+titulo, fecha: dateSTR), Fecha: date!, Titulo: titulo)
-                        programa.episodios.append(episodio)
+                        do {
+                            let episodio:Episodio = try Episodio(URL: url, Imagen: ImagesManager.sharedInstance.downloadImage(imageURL, nombrePrograma: programa.titulo+"-"+titulo, fecha: dateSTR), Fecha: date!, Titulo: titulo)
+                            programa.episodios.append(episodio)
+                        } catch {
+                            
+                        }
                     }
                 }
             }
