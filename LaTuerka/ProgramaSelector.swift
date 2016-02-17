@@ -12,11 +12,12 @@ import AVKit
 import MediaPlayer
 
 private let reuseIdentifier = "Cell"
-class ProgramaSelector: UICollectionViewController {
+class ProgramaSelector: UICollectionViewController, Observer {
     var data:Programa = Programa()   
     var avPlayer:AVPlayer = AVPlayer()
     override func viewDidLoad() {
         super.viewDidLoad()
+        Crawler.sharedInstance.addObserver(self)
         self.collectionView?.delegate = self
     }
     
@@ -27,6 +28,14 @@ class ProgramaSelector: UICollectionViewController {
     func gestureRecognizer(_: UIGestureRecognizer,
         shouldRecognizeSimultaneouslyWithGestureRecognizer:UIGestureRecognizer) -> Bool {
             return true
+    }
+    func invocar()
+    {
+        self.collectionView?.reloadData()
+    }
+    func observerID() -> String
+    {
+        return data.titulo
     }
     /**
      Establece una única sección para la colección

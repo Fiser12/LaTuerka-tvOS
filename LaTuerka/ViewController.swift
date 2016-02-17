@@ -8,10 +8,11 @@
 
 import UIKit
 
-class ViewController: UICollectionViewController, UIGestureRecognizerDelegate {
+class ViewController: UICollectionViewController, UIGestureRecognizerDelegate, Observer {
     //Los programvarque vamos a tener, los precargamos aquí para que consuma menos
     override func viewDidLoad() {
         super.viewDidLoad()
+        Crawler.sharedInstance.addObserver(self)
         self.collectionView?.delegate = self
     }
     
@@ -49,6 +50,21 @@ class ViewController: UICollectionViewController, UIGestureRecognizerDelegate {
         {
             return ProgramaCell()
         }
+    }
+    func observerID() -> String
+    {
+        return "Central"
+    }
+    func invocar()
+    {
+        for var index = 0; index < Crawler.sharedInstance.programas.count; ++index {
+            let celda: ProgramaCell = (self.collectionView?.visibleCells()[index] as? ProgramaCell)!
+            if let imagen:UIImage = Crawler.sharedInstance.programas[index].episodios.first?.image{
+                celda.programa.image = imagen
+                celda.img.image = imagen
+            }
+        }
+        self.collectionView?.reloadData()
     }
     /**
      Este método permite poner elementos en la cabecera (Header)

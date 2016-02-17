@@ -7,13 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5F03939C1C7425CB007C4858 /* ImagesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F03939B1C7425CB007C4858 /* ImagesManager.swift */; };
+		5F4D4A601C751BAB007C4858 /* Observer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4D4A5F1C751BAB007C4858 /* Observer.swift */; };
+		5F4D4A621C751C1B007C4858 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4D4A611C751C1B007C4858 /* Observable.swift */; };
+		5F4D4A641C752CEC007C4858 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F4D4A631C752CEC007C4858 /* Assets.xcassets */; };
 		5F8FE61A1C6D3576007C4858 /* Crawler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F8FE6191C6D3576007C4858 /* Crawler.swift */; };
 		5F8FE6371C6D483A007C4858 /* TFHpple.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F8FE6321C6D483A007C4858 /* TFHpple.m */; };
 		5F8FE6381C6D483A007C4858 /* TFHppleElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F8FE6341C6D483A007C4858 /* TFHppleElement.m */; };
 		5F8FE6391C6D483A007C4858 /* XPathQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F8FE6361C6D483A007C4858 /* XPathQuery.m */; };
 		5F8FE63E1C6D51B8007C4858 /* Episodio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F8FE63D1C6D51B8007C4858 /* Episodio.swift */; };
 		5F8FE6401C6D58D6007C4858 /* libxml2.2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F8FE63F1C6D58D6007C4858 /* libxml2.2.tbd */; };
-		5F8FE6451C6D9DB8007C4858 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F8FE6441C6D9DB8007C4858 /* Assets.xcassets */; };
 		5FB77EB81C6BAA7D007C4858 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB77EB71C6BAA7D007C4858 /* AppDelegate.swift */; };
 		5FB77EBA1C6BAA7D007C4858 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB77EB91C6BAA7D007C4858 /* ViewController.swift */; };
 		5FB77EBD1C6BAA7D007C4858 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FB77EBB1C6BAA7D007C4858 /* Main.storyboard */; };
@@ -36,6 +39,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5F03939B1C7425CB007C4858 /* ImagesManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagesManager.swift; sourceTree = "<group>"; };
+		5F4D4A5E1C750FE2007C4858 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
+		5F4D4A5F1C751BAB007C4858 /* Observer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Observer.swift; sourceTree = "<group>"; };
+		5F4D4A611C751C1B007C4858 /* Observable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
+		5F4D4A631C752CEC007C4858 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5F8FE6191C6D3576007C4858 /* Crawler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Crawler.swift; sourceTree = "<group>"; };
 		5F8FE6301C6D4839007C4858 /* LaTuerka-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LaTuerka-Bridging-Header.h"; sourceTree = "<group>"; };
 		5F8FE6311C6D483A007C4858 /* TFHpple.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFHpple.h; sourceTree = "<group>"; };
@@ -46,7 +54,6 @@
 		5F8FE6361C6D483A007C4858 /* XPathQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPathQuery.m; sourceTree = "<group>"; };
 		5F8FE63D1C6D51B8007C4858 /* Episodio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Episodio.swift; sourceTree = "<group>"; };
 		5F8FE63F1C6D58D6007C4858 /* libxml2.2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.2.tbd; path = usr/lib/libxml2.2.tbd; sourceTree = SDKROOT; };
-		5F8FE6441C6D9DB8007C4858 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5FB77EB41C6BAA7D007C4858 /* LaTuerka.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LaTuerka.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FB77EB71C6BAA7D007C4858 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5FB77EB91C6BAA7D007C4858 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -81,6 +88,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5F0393981C7412C0007C4858 /* Celdas */ = {
+			isa = PBXGroup;
+			children = (
+				5FFAEB0A1C70FED7007C4858 /* EpisodioCell.swift */,
+				5FB77ED61C6BB561007C4858 /* ProgramaCell.swift */,
+			);
+			name = Celdas;
+			sourceTree = "<group>";
+		};
+		5F0393991C7412C9007C4858 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				5FFAEB061C70F37A007C4858 /* ProgramaSelector.swift */,
+				5FB77EB91C6BAA7D007C4858 /* ViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
 		5F8FE63A1C6D4851007C4858 /* TFHpple */ = {
 			isa = PBXGroup;
 			children = (
@@ -107,9 +132,9 @@
 			children = (
 				5F8FE6411C6D9063007C4858 /* Ressources */,
 				5F8FE63F1C6D58D6007C4858 /* libxml2.2.tbd */,
-				5F8FE6441C6D9DB8007C4858 /* Assets.xcassets */,
-				5FB77EB61C6BAA7D007C4858 /* LaTuerka */,
+				5F4D4A631C752CEC007C4858 /* Assets.xcassets */,
 				5FB77EC81C6BAA7D007C4858 /* LaTuerkaTests */,
+				5FB77EB61C6BAA7D007C4858 /* LaTuerka */,
 				5FB77EB51C6BAA7D007C4858 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -143,18 +168,17 @@
 				5FB77ECB1C6BAA7D007C4858 /* Info.plist */,
 			);
 			path = LaTuerkaTests;
-			sourceTree = "<group>";
+			sourceTree = SOURCE_ROOT;
 		};
 		5FFAEB0C1C70FF36007C4858 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
 				5F8FE6191C6D3576007C4858 /* Crawler.swift */,
+				5F03939B1C7425CB007C4858 /* ImagesManager.swift */,
 				5FB77EB71C6BAA7D007C4858 /* AppDelegate.swift */,
 				5FB77ED81C6BB672007C4858 /* ViewHeaderPrograms.swift */,
-				5FFAEB061C70F37A007C4858 /* ProgramaSelector.swift */,
-				5FB77EB91C6BAA7D007C4858 /* ViewController.swift */,
-				5FFAEB0A1C70FED7007C4858 /* EpisodioCell.swift */,
-				5FB77ED61C6BB561007C4858 /* ProgramaCell.swift */,
+				5F0393991C7412C9007C4858 /* ViewControllers */,
+				5F0393981C7412C0007C4858 /* Celdas */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -163,7 +187,9 @@
 			isa = PBXGroup;
 			children = (
 				5FB77EDA1C6BC080007C4858 /* Programa.swift */,
+				5F4D4A5F1C751BAB007C4858 /* Observer.swift */,
 				5F8FE63D1C6D51B8007C4858 /* Episodio.swift */,
+				5F4D4A611C751C1B007C4858 /* Observable.swift */,
 			);
 			name = DataObjects;
 			sourceTree = "<group>";
@@ -234,6 +260,11 @@
 					5FB77EB31C6BAA7D007C4858 = {
 						CreatedOnToolsVersion = 7.2.1;
 						DevelopmentTeam = J6JK54DXZ9;
+						SystemCapabilities = {
+							com.apple.BackgroundModes.appletvos = {
+								enabled = 0;
+							};
+						};
 					};
 					5FB77EC41C6BAA7D007C4858 = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -266,7 +297,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5F8FE6451C6D9DB8007C4858 /* Assets.xcassets in Resources */,
+				5F4D4A641C752CEC007C4858 /* Assets.xcassets in Resources */,
 				5FB77EBD1C6BAA7D007C4858 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -286,10 +317,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				5F8FE6381C6D483A007C4858 /* TFHppleElement.m in Sources */,
+				5F4D4A621C751C1B007C4858 /* Observable.swift in Sources */,
 				5FFAEB0B1C70FED7007C4858 /* EpisodioCell.swift in Sources */,
 				5F8FE61A1C6D3576007C4858 /* Crawler.swift in Sources */,
 				5FB77EBA1C6BAA7D007C4858 /* ViewController.swift in Sources */,
 				5FB77ED91C6BB672007C4858 /* ViewHeaderPrograms.swift in Sources */,
+				5F4D4A601C751BAB007C4858 /* Observer.swift in Sources */,
 				5F8FE6391C6D483A007C4858 /* XPathQuery.m in Sources */,
 				5F8FE6371C6D483A007C4858 /* TFHpple.m in Sources */,
 				5FB77EB81C6BAA7D007C4858 /* AppDelegate.swift in Sources */,
@@ -297,6 +330,7 @@
 				5FB77EDB1C6BC080007C4858 /* Programa.swift in Sources */,
 				5FFAEB071C70F37A007C4858 /* ProgramaSelector.swift in Sources */,
 				5FB77ED71C6BB561007C4858 /* ProgramaCell.swift in Sources */,
+				5F03939C1C7425CB007C4858 /* ImagesManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,6 +357,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				5FB77EBC1C6BAA7D007C4858 /* Base */,
+				5F4D4A5E1C750FE2007C4858 /* es */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
