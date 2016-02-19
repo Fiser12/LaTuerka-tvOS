@@ -9,13 +9,13 @@
 import UIKit
 
 class ViewController: UICollectionViewController, UIGestureRecognizerDelegate, Observer {
-    //Los programvarque vamos a tener, los precargamos aquí para que consuma menos
+    var timer:NSTimer?
     override func viewDidLoad() {
         super.viewDidLoad()
         Crawler.sharedInstance.addObserver(self)
+        timer = NSTimer.scheduledTimerWithTimeInterval(2, target: self, selector: "invocar", userInfo: nil, repeats: false)
         self.collectionView?.delegate = self
     }
-    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -61,10 +61,11 @@ class ViewController: UICollectionViewController, UIGestureRecognizerDelegate, O
             let celda: ProgramaCell = (self.collectionView?.visibleCells()[index] as? ProgramaCell)!
             if let imagen:UIImage = Crawler.sharedInstance.programas[index].episodios.first?.image{
                 celda.programa.image = imagen
-                celda.img.image = imagen
+                UIView.transitionWithView(self.view!, duration: 0.5, options: .TransitionCrossDissolve, animations: {() -> Void in
+                    celda.img.image = imagen
+                    }, completion: { _ in })
             }
         }
-        self.collectionView?.reloadData()
     }
     /**
      Este método permite poner elementos en la cabecera (Header)
@@ -82,6 +83,7 @@ class ViewController: UICollectionViewController, UIGestureRecognizerDelegate, O
         let cell:ProgramaCell = sender as! ProgramaCell
         destinoController.data = cell.programa
     }
+    
     override func didUpdateFocusInContext(context: UIFocusUpdateContext, withAnimationCoordinator coordinator: UIFocusAnimationCoordinator) {
         coordinator.addCoordinatedAnimations({
             context.previouslyFocusedView?.transform = CGAffineTransformIdentity

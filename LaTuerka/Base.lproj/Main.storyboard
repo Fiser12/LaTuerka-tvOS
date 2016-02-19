@@ -237,7 +237,7 @@
     <resources>
         <image name="barra" width="495" height="65"/>
         <image name="bg" width="1920" height="1080"/>
-        <image name="laTuerkaActualidad" width="1680" height="940"/>
+        <image name="laTuerkaActualidad" width="495" height="320"/>
         <image name="logo" width="148" height="169"/>
     </resources>
 </document>

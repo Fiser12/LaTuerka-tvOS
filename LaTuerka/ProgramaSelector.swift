@@ -15,9 +15,11 @@ private let reuseIdentifier = "Cell"
 class ProgramaSelector: UICollectionViewController, Observer {
     var data:Programa = Programa()   
     var avPlayer:AVPlayer = AVPlayer()
+    var timer:NSTimer?
     override func viewDidLoad() {
         super.viewDidLoad()
         Crawler.sharedInstance.addObserver(self)
+        timer = NSTimer.scheduledTimerWithTimeInterval(5, target: self, selector: "update", userInfo: nil, repeats: true)
         self.collectionView?.delegate = self
     }
     
@@ -29,9 +31,15 @@ class ProgramaSelector: UICollectionViewController, Observer {
         shouldRecognizeSimultaneouslyWithGestureRecognizer:UIGestureRecognizer) -> Bool {
             return true
     }
+    func update()
+    {
+        self.collectionView?.reloadData()
+    }
     func invocar()
     {
         self.collectionView?.reloadData()
+        timer?.invalidate()
+        timer = nil
     }
     func observerID() -> String
     {

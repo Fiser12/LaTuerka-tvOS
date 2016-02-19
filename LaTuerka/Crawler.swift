@@ -19,7 +19,7 @@ class Crawler: Observable{
         Programa(Imagen: UIImage(named: "laTuerkaNews")!, URL: "http://especiales.publico.es/publico-tv/la-tuerka/tuerka-news", Titulo: "LA TUERKA NEWS"),
         Programa(Imagen: UIImage(named: "enClaveTuerka")!, URL: "http://especiales.publico.es/publico-tv/la-tuerka/en-clave-tuerka", Titulo: "EN CLAVE TUERKA"),
         Programa(Imagen: UIImage(named: "otraVueltaDeTuerka")!, URL: "http://especiales.publico.es/publico-tv/la-tuerka/otra-vuelta-de-tuerka", Titulo: "OTRA VUELTA DE TUERKA")]
-    var checkFinish = 1;
+    var comprobarProgramas:[String] = []
     private init(){
         for programa in programas
         {
@@ -29,14 +29,6 @@ class Crawler: Observable{
                     if let elemento:Observer = self.observable.filter({$0.observerID() == programa.titulo}).first{
                         elemento.invocar()
                     }
-                    if self.checkFinish != 6{
-                        ++self.checkFinish
-                    }
-                    else{
-                        if let elemento:Observer = self.observable.filter({$0.observerID() == "Central"}).first{
-                            elemento.invocar()
-                        }
-                    }
                     });
                 });
         }
@@ -45,29 +37,6 @@ class Crawler: Observable{
     {
         observable.append(observer)
     }
-    private func descargarPortadas(URL urlActual:String, Programa programa:Programa)
-    {
-        if let urlNS:NSURL = NSURL(string: urlActual)
-        {
-            if let data:NSData = NSData(contentsOfURL: urlNS)
-            {
-                let doc = TFHpple(HTMLData: data)
-                if let elements = doc.searchWithXPathQuery("//ul[@class='program-list']/li") as? [TFHppleElement] {
-                    let urlTag:TFHppleElement! = (elements.first!.searchWithXPathQuery("//a") as? [TFHppleElement])?.first
-                    var url:String = "http://especiales.publico.es"+(urlTag?.objectForKey("href"))!
-                    url = obtenerURLVideo(URL: url)
-                    let imageURL:String! = (urlTag?.searchWithXPathQuery("//img") as? [TFHppleElement])?.first?.objectForKey("src")
-                    let dateSTR:String! = ((elements.first!.searchWithXPathQuery("//h4//a//span") as? [TFHppleElement])?.first)?.text()
-                    let titulo:String! = ((elements.first!.searchWithXPathQuery("//h3//a") as? [TFHppleElement])?.first)?.text()
-                    do{
-                        programa.image = try ImagesManager.sharedInstance.downloadImage(imageURL, nombrePrograma: programa.titulo+"-"+titulo, fecha: dateSTR)
-                    } catch {
-                    }
-                }
-            }
-        }
-    }
-
     func descargarProgramasBucle(Programa programa: Programa, URL urlActual: String)
     {
         
@@ -101,11 +70,14 @@ class Crawler: Observable{
                         let dateFormatter = NSDateFormatter()
                         dateFormatter.dateFormat = "dd-MM-yyyy"
                         let date = dateFormatter.dateFromString( dateSTR )
-                        do {
-                            let episodio:Episodio = try Episodio(URL: url, Imagen: ImagesManager.sharedInstance.downloadImage(imageURL, nombrePrograma: programa.titulo+"-"+titulo, fecha: dateSTR), Fecha: date!, Titulo: titulo)
-                            programa.episodios.append(episodio)
-                        } catch {
+                        if url != ""{
+                            do {
+                                let imagen:UIImage = try ImagesManager.sharedInstance.downloadImage(imageURL, nombrePrograma: programa.titulo+"-"+titulo, fecha: dateSTR)
+                                let episodio:Episodio = Episodio(URL: url, Imagen: imagen, Fecha: date!, Titulo: titulo)
+                                programa.episodios.append(episodio)
+                            } catch {
                             
+                            }
                         }
                     }
                 }
