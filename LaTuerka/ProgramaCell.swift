@@ -30,7 +30,6 @@ class ProgramaCell: UICollectionViewCell {
         img.adjustsImageWhenAncestorFocused = true
         img.clipsToBounds = false
         cellTitle.adjustsFontSizeToFitWidth = true
-        
     }
     
     // MARK: UICollectionReusableView

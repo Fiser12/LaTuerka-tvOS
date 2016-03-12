@@ -33,13 +33,26 @@ class Crawler: Observable{
                 });
         }
     }
+    func comprobar(id:String)
+    {
+        if !comprobarProgramas.contains(id)
+        {
+            comprobarProgramas.append(id)
+            if comprobarProgramas.count == 6{
+                if let elemento:Observer = self.observable.filter({$0.observerID() == "Central"}).first{
+                    dispatch_async(dispatch_get_main_queue(), {
+                        elemento.invocar()
+                    });
+                }
+            }
+        }
+    }
     func addObserver(observer:Observer)
     {
         observable.append(observer)
     }
     func descargarProgramasBucle(Programa programa: Programa, URL urlActual: String)
     {
-        
         if(urlActual != "#"){
             descargarRecursivamente(URL: urlActual, Programa: programa)
             if let urlNS:NSURL = NSURL(string: urlActual){
@@ -75,6 +88,7 @@ class Crawler: Observable{
                                 let imagen:UIImage = try ImagesManager.sharedInstance.downloadImage(imageURL, nombrePrograma: programa.titulo+"-"+titulo, fecha: dateSTR)
                                 let episodio:Episodio = Episodio(URL: url, Imagen: imagen, Fecha: date!, Titulo: titulo)
                                 programa.episodios.append(episodio)
+                                comprobar(programa.titulo)
                             } catch {
                             
                             }

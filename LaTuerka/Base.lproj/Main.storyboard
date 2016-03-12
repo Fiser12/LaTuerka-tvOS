@@ -32,7 +32,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="450" height="340"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="laTuerkaActualidad" translatesAutoresizingMaskIntoConstraints="NO" id="Cg9-TZ-on9">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="Img" image="laTuerkaActualidad" translatesAutoresizingMaskIntoConstraints="NO" id="Cg9-TZ-on9">
                                             <rect key="frame" x="0.0" y="8" width="450" height="340"/>
                                             <gestureRecognizers/>
                                             <constraints>

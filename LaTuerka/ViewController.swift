@@ -9,11 +9,9 @@
 import UIKit
 
 class ViewController: UICollectionViewController, UIGestureRecognizerDelegate, Observer {
-    var timer:NSTimer?
     override func viewDidLoad() {
         super.viewDidLoad()
         Crawler.sharedInstance.addObserver(self)
-        timer = NSTimer.scheduledTimerWithTimeInterval(2, target: self, selector: "invocar", userInfo: nil, repeats: false)
         self.collectionView?.delegate = self
     }
     override func didReceiveMemoryWarning() {
