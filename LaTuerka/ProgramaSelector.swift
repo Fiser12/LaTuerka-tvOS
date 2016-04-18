@@ -19,7 +19,7 @@ class ProgramaSelector: UICollectionViewController, Observer {
     override func viewDidLoad() {
         super.viewDidLoad()
         Crawler.sharedInstance.addObserver(self)
-        timer = NSTimer.scheduledTimerWithTimeInterval(5, target: self, selector: "update", userInfo: nil, repeats: true)
+        timer = NSTimer.scheduledTimerWithTimeInterval(5, target: self, selector: #selector(ProgramaSelector.update), userInfo: nil, repeats: true)
         self.collectionView?.delegate = self
     }
     

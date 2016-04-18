@@ -11,13 +11,12 @@ import UIKit
 class Episodio {
     var url: String = ""
     var image: UIImage
-    var data: NSDate
+    var data: NSDate?
     var titulo: String
-    init(URL url:String, Imagen image: UIImage, Fecha data: NSDate, Titulo titulo: String)
+    init(URL url:String, Imagen image: UIImage, Titulo titulo: String)
     {
         self.url = url
         self.image = image
-        self.data = data
         self.titulo = titulo
     }
 }

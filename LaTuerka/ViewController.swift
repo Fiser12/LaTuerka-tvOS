@@ -55,7 +55,7 @@ class ViewController: UICollectionViewController, UIGestureRecognizerDelegate, O
     }
     func invocar()
     {
-        for var index = 0; index < Crawler.sharedInstance.programas.count; ++index {
+        for index in 0 ..< Crawler.sharedInstance.programas.count {
             let celda: ProgramaCell = (self.collectionView?.visibleCells()[index] as? ProgramaCell)!
             if let imagen:UIImage = Crawler.sharedInstance.programas[index].episodios.first?.image{
                 celda.programa.image = imagen

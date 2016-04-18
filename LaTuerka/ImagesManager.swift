@@ -19,9 +19,9 @@ class ImagesManager{
     func loadImageFromPath(path: String) -> UIImage? {
         return UIImage(contentsOfFile: path)
     }
-    func downloadImage(url: String, nombrePrograma: String, fecha: String) throws -> UIImage {
+    func downloadImage(url: String, nombrePrograma: String) throws -> UIImage {
         if let urlNS:NSURL = NSURL(string: url){
-            let imagePath = fileInDocumentsDirectory(nombrePrograma + "-" + fecha + "-" + urlNS.pathComponents!.last!)
+            let imagePath = fileInDocumentsDirectory(nombrePrograma + "-" + urlNS.pathComponents!.last!)
             if let loadedImage = loadImageFromPath(imagePath) {
                 return loadedImage
             } else {
