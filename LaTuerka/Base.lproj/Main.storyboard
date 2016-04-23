@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" initialViewController="UaL-Ye-H8p">
+<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" initialViewController="UaL-Ye-H8p">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -32,7 +32,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="450" height="340"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="Img" image="laTuerkaActualidad" translatesAutoresizingMaskIntoConstraints="NO" id="Cg9-TZ-on9">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="Img" image="laTuerkaNews" translatesAutoresizingMaskIntoConstraints="NO" id="Cg9-TZ-on9">
                                             <rect key="frame" x="0.0" y="8" width="450" height="340"/>
                                             <gestureRecognizers/>
                                             <constraints>
@@ -237,7 +237,7 @@
     <resources>
         <image name="barra" width="495" height="65"/>
         <image name="bg" width="1920" height="1080"/>
-        <image name="laTuerkaActualidad" width="495" height="320"/>
+        <image name="laTuerkaNews" width="495" height="320"/>
         <image name="logo" width="148" height="169"/>
     </resources>
 </document>

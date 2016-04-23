@@ -14,7 +14,6 @@ class Programa{
     var image: UIImage
     var episodios: [Episodio]
     var titulo: String
-    var episodiosCache: [EpisodioEntity]?
     init()
     {
         self.episodios = []

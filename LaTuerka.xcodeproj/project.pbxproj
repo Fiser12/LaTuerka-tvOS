@@ -8,11 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		5F03939C1C7425CB007C4858 /* ImagesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F03939B1C7425CB007C4858 /* ImagesManager.swift */; };
-		5F44D5021C950A89007C4858 /* EpisodioEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F44D5001C950A89007C4858 /* EpisodioEntity.swift */; };
-		5F44D5041C950C18007C4858 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F44D5031C950C18007C4858 /* DataController.swift */; };
 		5F4D4A601C751BAB007C4858 /* Observer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4D4A5F1C751BAB007C4858 /* Observer.swift */; };
 		5F4D4A621C751C1B007C4858 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4D4A611C751C1B007C4858 /* Observable.swift */; };
-		5F4D4A641C752CEC007C4858 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F4D4A631C752CEC007C4858 /* Assets.xcassets */; };
 		5F8FE61A1C6D3576007C4858 /* Crawler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F8FE6191C6D3576007C4858 /* Crawler.swift */; };
 		5F8FE6371C6D483A007C4858 /* TFHpple.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F8FE6321C6D483A007C4858 /* TFHpple.m */; };
 		5F8FE6381C6D483A007C4858 /* TFHppleElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F8FE6341C6D483A007C4858 /* TFHppleElement.m */; };
@@ -26,7 +23,7 @@
 		5FB77ED71C6BB561007C4858 /* ProgramaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB77ED61C6BB561007C4858 /* ProgramaCell.swift */; };
 		5FB77ED91C6BB672007C4858 /* ViewHeaderPrograms.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB77ED81C6BB672007C4858 /* ViewHeaderPrograms.swift */; };
 		5FB77EDB1C6BC080007C4858 /* Programa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB77EDA1C6BC080007C4858 /* Programa.swift */; };
-		5FBACAC31C95037C007C4858 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5FBACAC11C95037C007C4858 /* Model.xcdatamodeld */; };
+		5FD491D01CCC33E1007C4858 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FD491CF1CCC33E1007C4858 /* Assets.xcassets */; };
 		5FFAEB071C70F37A007C4858 /* ProgramaSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFAEB061C70F37A007C4858 /* ProgramaSelector.swift */; };
 		5FFAEB0B1C70FED7007C4858 /* EpisodioCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFAEB0A1C70FED7007C4858 /* EpisodioCell.swift */; };
 /* End PBXBuildFile section */
@@ -43,12 +40,9 @@
 
 /* Begin PBXFileReference section */
 		5F03939B1C7425CB007C4858 /* ImagesManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagesManager.swift; sourceTree = "<group>"; };
-		5F44D5001C950A89007C4858 /* EpisodioEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EpisodioEntity.swift; path = ../EpisodioEntity.swift; sourceTree = "<group>"; };
-		5F44D5031C950C18007C4858 /* DataController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		5F4D4A5E1C750FE2007C4858 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
 		5F4D4A5F1C751BAB007C4858 /* Observer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Observer.swift; sourceTree = "<group>"; };
 		5F4D4A611C751C1B007C4858 /* Observable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
-		5F4D4A631C752CEC007C4858 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5F8FE6191C6D3576007C4858 /* Crawler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Crawler.swift; sourceTree = "<group>"; };
 		5F8FE6301C6D4839007C4858 /* LaTuerka-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LaTuerka-Bridging-Header.h"; sourceTree = "<group>"; };
 		5F8FE6311C6D483A007C4858 /* TFHpple.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFHpple.h; sourceTree = "<group>"; };
@@ -70,7 +64,7 @@
 		5FB77ED61C6BB561007C4858 /* ProgramaCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgramaCell.swift; sourceTree = "<group>"; };
 		5FB77ED81C6BB672007C4858 /* ViewHeaderPrograms.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewHeaderPrograms.swift; sourceTree = "<group>"; };
 		5FB77EDA1C6BC080007C4858 /* Programa.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Programa.swift; sourceTree = "<group>"; };
-		5FBACAC21C95037C007C4858 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		5FD491CF1CCC33E1007C4858 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5FFAEB061C70F37A007C4858 /* ProgramaSelector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgramaSelector.swift; sourceTree = "<group>"; };
 		5FFAEB0A1C70FED7007C4858 /* EpisodioCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EpisodioCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -129,7 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				5F8FE63F1C6D58D6007C4858 /* libxml2.2.tbd */,
-				5F4D4A631C752CEC007C4858 /* Assets.xcassets */,
+				5FD491CF1CCC33E1007C4858 /* Assets.xcassets */,
 				5FB77EC81C6BAA7D007C4858 /* LaTuerkaTests */,
 				5FB77EB61C6BAA7D007C4858 /* LaTuerka */,
 				5FB77EB51C6BAA7D007C4858 /* Products */,
@@ -195,9 +189,6 @@
 			isa = PBXGroup;
 			children = (
 				5FB77EC01C6BAA7D007C4858 /* Info.plist */,
-				5F44D5001C950A89007C4858 /* EpisodioEntity.swift */,
-				5FBACAC11C95037C007C4858 /* Model.xcdatamodeld */,
-				5F44D5031C950C18007C4858 /* DataController.swift */,
 			);
 			name = Data;
 			sourceTree = "<group>";
@@ -290,7 +281,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5F4D4A641C752CEC007C4858 /* Assets.xcassets in Resources */,
+				5FD491D01CCC33E1007C4858 /* Assets.xcassets in Resources */,
 				5FB77EBD1C6BAA7D007C4858 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -318,11 +309,8 @@
 				5F4D4A601C751BAB007C4858 /* Observer.swift in Sources */,
 				5F8FE6391C6D483A007C4858 /* XPathQuery.m in Sources */,
 				5F8FE6371C6D483A007C4858 /* TFHpple.m in Sources */,
-				5F44D5041C950C18007C4858 /* DataController.swift in Sources */,
 				5FB77EB81C6BAA7D007C4858 /* AppDelegate.swift in Sources */,
-				5F44D5021C950A89007C4858 /* EpisodioEntity.swift in Sources */,
 				5F8FE63E1C6D51B8007C4858 /* Episodio.swift in Sources */,
-				5FBACAC31C95037C007C4858 /* Model.xcdatamodeld in Sources */,
 				5FB77EDB1C6BC080007C4858 /* Programa.swift in Sources */,
 				5FFAEB071C70F37A007C4858 /* ProgramaSelector.swift in Sources */,
 				5FB77ED71C6BB561007C4858 /* ProgramaCell.swift in Sources */,
@@ -527,19 +515,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		5FBACAC11C95037C007C4858 /* Model.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				5FBACAC21C95037C007C4858 /* Model.xcdatamodel */,
-			);
-			currentVersion = 5FBACAC21C95037C007C4858 /* Model.xcdatamodel */;
-			path = Model.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 5FB77EAC1C6BAA7D007C4858 /* Project object */;
 }

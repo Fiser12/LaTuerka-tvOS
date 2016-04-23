@@ -93,5 +93,6 @@ class ViewController: UICollectionViewController, UIGestureRecognizerDelegate, O
             context.nextFocusedView?.layer.shadowOpacity = 1.0
             }, completion: nil)
     }
+    
 }
 
