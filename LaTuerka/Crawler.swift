@@ -95,14 +95,9 @@ class Crawler: Observable{
                         let titulo:String! = ((element.searchWithXPathQuery("//h4//a") as? [TFHppleElement])?.first)?.text()
                         let imageURL:String! = (urlTag?.searchWithXPathQuery("//img") as? [TFHppleElement])?.first?.objectForKey("src")
                         if url != ""{
-                            do {
-                                let imagen:UIImage = try ImagesManager.sharedInstance.downloadImage(imageURL, nombrePrograma: programa.titulo+"-"+titulo)
-                                let episodio:Episodio = Episodio(URL: url, Imagen: imagen, Titulo: titulo)
-                                programa.episodios.append(episodio)
-                                comprobar(programa.titulo)
-                            } catch {
-                            
-                            }
+                            let episodio:Episodio = Episodio(URL: url, Imagen: imageURL, Titulo: titulo)
+                            programa.episodios.append(episodio)
+                            comprobar(programa.titulo)
                         }
                     }
                 }

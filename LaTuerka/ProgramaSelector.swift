@@ -36,6 +36,7 @@ class ProgramaSelector: UICollectionViewController, Observer {
         Crawler.sharedInstance.addObserver(self)
         timer = NSTimer.scheduledTimerWithTimeInterval(5, target: self, selector: #selector(ProgramaSelector.update), userInfo: nil, repeats: true)
         self.collectionView?.delegate = self
+        
     }
     
     override func didReceiveMemoryWarning() {
@@ -79,7 +80,7 @@ class ProgramaSelector: UICollectionViewController, Observer {
         if let celda: EpisodioCell = collectionView.dequeueReusableCellWithReuseIdentifier("EpisodioCell", forIndexPath: indexPath) as? EpisodioCell
         {
             let episodio = data.episodios[indexPath.row]
-            celda.configurar(episodio)
+            celda.configurar(episodio, programa: data.titulo)
             return celda;
         }
         else

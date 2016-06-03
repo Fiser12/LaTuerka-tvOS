@@ -72,11 +72,15 @@ class ViewController: UICollectionViewController, UIGestureRecognizerDelegate, O
     {
         for index in 0 ..< Crawler.sharedInstance.programas.count {
             let celda: ProgramaCell = (self.collectionView?.visibleCells()[index] as? ProgramaCell)!
-            if let imagen:UIImage = Crawler.sharedInstance.programas[index].episodios.first?.image{
-                celda.programa.image = imagen
-                UIView.transitionWithView(self.view!, duration: 0.5, options: .TransitionCrossDissolve, animations: {() -> Void in
-                    celda.img.image = imagen
+            let episodio: Episodio = (Crawler.sharedInstance.programas[index].episodios.first)!;
+            do {
+                let imagen:UIImage = try ImagesManager.sharedInstance.downloadImage(episodio.image, nombrePrograma: celda.programa.titulo+"-"+episodio.titulo)
+                    celda.programa.image = imagen
+                    UIView.transitionWithView(self.view!, duration: 0.5, options: .TransitionCrossDissolve, animations: {() -> Void in
+                        celda.img.image = imagen
                     }, completion: { _ in })
+            } catch {
+                
             }
         }
     }

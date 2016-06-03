@@ -25,10 +25,10 @@ import Foundation
 import UIKit
 class Episodio {
     var url: String = ""
-    var image: UIImage
+    var image: String
     var data: NSDate?
     var titulo: String
-    init(URL url:String, Imagen image: UIImage, Titulo titulo: String)
+    init(URL url:String, Imagen image: String, Titulo titulo: String)
     {
         self.url = url
         self.image = image

@@ -29,11 +29,16 @@ class EpisodioCell: UICollectionViewCell {
     @IBOutlet weak var img: UIImageView!
     var url: String = ""
     var episodio:Episodio!
+    
     @IBOutlet weak var cellTitle: UILabel!
-    func configurar(let episodio:Episodio)
+    func configurar(let episodio:Episodio, let programa:String)
     {
         self.episodio = episodio
-        self.img.image = episodio.image
+        do {
+            self.img.image = try ImagesManager.sharedInstance.downloadImage(episodio.image, nombrePrograma: programa+"-"+episodio.titulo)
+        } catch {
+            
+        }
         self.url = episodio.url
         self.cellTitle.text = episodio.titulo
         self.cellTitle.font = UIFont(name:"HelveticaNeue-Bold",size: 24)
