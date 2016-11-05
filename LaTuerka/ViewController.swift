@@ -34,26 +34,26 @@ class ViewController: UICollectionViewController, UIGestureRecognizerDelegate, O
         // Dispose of any resources that can be recreated.
     }
     func gestureRecognizer(_: UIGestureRecognizer,
-        shouldRecognizeSimultaneouslyWithGestureRecognizer:UIGestureRecognizer) -> Bool {
+        shouldRecognizeSimultaneouslyWith shouldRecognizeSimultaneouslyWithGestureRecognizer:UIGestureRecognizer) -> Bool {
             return true
     }
     /**
     Establece una única sección para la colección
     */
-    override func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
+    override func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
     }
     /**
     Decimos el número de elementos que va a tener
     */
-    override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return Crawler.sharedInstance.programas.count
     }
     /**
      Este método permite configurar cada celda con los datos necesarios
     */
-    override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        if let celda: ProgramaCell = collectionView.dequeueReusableCellWithReuseIdentifier("ProgramaCell", forIndexPath: indexPath) as? ProgramaCell
+    override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        if let celda: ProgramaCell = collectionView.dequeueReusableCell(withReuseIdentifier: "ProgramaCell", for: indexPath) as? ProgramaCell
         {
             let programa = Crawler.sharedInstance.programas[indexPath.row]
             celda.configurar(programa)
@@ -71,12 +71,12 @@ class ViewController: UICollectionViewController, UIGestureRecognizerDelegate, O
     func invocar()
     {
         for index in 0 ..< Crawler.sharedInstance.programas.count {
-            let celda: ProgramaCell = (self.collectionView?.visibleCells()[index] as? ProgramaCell)!
+            let celda: ProgramaCell = (self.collectionView?.visibleCells[index] as? ProgramaCell)!
             let episodio: Episodio = (Crawler.sharedInstance.programas[index].episodios.first)!;
             do {
                 let imagen:UIImage = try ImagesManager.sharedInstance.downloadImage(episodio.image, nombrePrograma: celda.programa.titulo+"-"+episodio.titulo)
                     celda.programa.image = imagen
-                    UIView.transitionWithView(self.view!, duration: 0.5, options: .TransitionCrossDissolve, animations: {() -> Void in
+                    UIView.transition(with: self.view!, duration: 0.5, options: .transitionCrossDissolve, animations: {() -> Void in
                         celda.img.image = imagen
                     }, completion: { _ in })
             } catch {
@@ -87,28 +87,28 @@ class ViewController: UICollectionViewController, UIGestureRecognizerDelegate, O
     /**
      Este método permite poner elementos en la cabecera (Header)
     */
-    override func collectionView(collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, atIndexPath indexPath: NSIndexPath) -> UICollectionReusableView {
+    override func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         
-        let commentView = collectionView.dequeueReusableSupplementaryViewOfKind(kind, withReuseIdentifier: "Header", forIndexPath: indexPath) as! ViewHeaderPrograms
+        let commentView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "Header", for: indexPath) as! ViewHeaderPrograms
         
         commentView.logo = UIImageView(image: UIImage(named: "logo"))
         commentView.barra = UIImageView( image: UIImage(named: "barra"))
         return commentView
     }
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        let destinoController: ProgramaSelector = segue.destinationViewController as! ProgramaSelector
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let destinoController: ProgramaSelector = segue.destination as! ProgramaSelector
         let cell:ProgramaCell = sender as! ProgramaCell
         destinoController.data = cell.programa
     }
     
-    override func didUpdateFocusInContext(context: UIFocusUpdateContext, withAnimationCoordinator coordinator: UIFocusAnimationCoordinator) {
+    override func didUpdateFocus(in context: UIFocusUpdateContext, with coordinator: UIFocusAnimationCoordinator) {
         coordinator.addCoordinatedAnimations({
-            context.previouslyFocusedView?.transform = CGAffineTransformIdentity
-            context.previouslyFocusedView?.layer.shadowColor = UIColor.clearColor().CGColor
-            context.nextFocusedView?.transform = CGAffineTransformMakeScale(1.10, 1.10)
-            context.nextFocusedView?.layer.shadowColor = UIColor.blackColor().CGColor
+            context.previouslyFocusedView?.transform = CGAffineTransform.identity
+            context.previouslyFocusedView?.layer.shadowColor = UIColor.clear.cgColor
+            context.nextFocusedView?.transform = CGAffineTransform(scaleX: 1.10, y: 1.10)
+            context.nextFocusedView?.layer.shadowColor = UIColor.black.cgColor
             context.nextFocusedView?.layer.shadowRadius = 8.0
-            context.nextFocusedView?.layer.shadowOffset = CGSizeMake(0,2)
+            context.nextFocusedView?.layer.shadowOffset = CGSize(width: 0,height: 2)
             context.nextFocusedView?.layer.shadowOpacity = 1.0
             }, completion: nil)
     }

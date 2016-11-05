@@ -26,65 +26,65 @@ import UIKit
 
 class ImagesManager{
     static let sharedInstance = ImagesManager()
-    func saveImage (image: UIImage, path: String ) -> Bool{
+    func saveImage (_ image: UIImage, path: String ) -> Bool{
         let jpgImageData = UIImageJPEGRepresentation(image, 1.0)
-        let result = jpgImageData!.writeToFile(path, atomically: true)
+        let result = (try? jpgImageData!.write(to: URL(fileURLWithPath: path), options: [.atomic])) != nil
         return result
     }
-    func loadImageFromPath(path: String) -> UIImage? {
+    func loadImageFromPath(_ path: String) -> UIImage? {
         return UIImage(contentsOfFile: path)
     }
-    func downloadImage(url: String, nombrePrograma: String) throws -> UIImage {
-        if let urlNS:NSURL = NSURL(string: url){
-            let imagePath = fileInDocumentsDirectory(nombrePrograma + "-" + urlNS.pathComponents!.last!)
+    func downloadImage(_ url: String, nombrePrograma: String) throws -> UIImage {
+        if let urlNS:URL = URL(string: url){
+            let imagePath = fileInDocumentsDirectory(nombrePrograma + "-" + urlNS.pathComponents.last!)
             if let loadedImage = loadImageFromPath(imagePath) {
                 return loadedImage
             } else {
-                if let data:NSData = NSData(contentsOfURL: urlNS){ //make sure your image in this url does exist, otherwise unwrap in a if let check
+                if let data:Data = try? Data(contentsOf: urlNS){ //make sure your image in this url does exist, otherwise unwrap in a if let check
                     if let imagen:UIImage = UIImage(data: data){
-                        let imagenProcesada:UIImage = imageByCombiningImage(imageResize(imagen, sizeChange:  CGSizeMake(495, 300)))
+                        let imagenProcesada:UIImage = imageByCombiningImage(imageResize(imagen, sizeChange:  CGSize(width: 495, height: 300)))
                         saveImage(imagenProcesada, path: imagePath)
                         return imagenProcesada
                     }
                     else{
-                        throw BadImage.Empty
+                        throw BadImage.empty
                     }
                 }
             }
         }
         return UIImage()
     }
-    func imageByCombiningImage(firstImage: UIImage) -> UIImage {
+    func imageByCombiningImage(_ firstImage: UIImage) -> UIImage {
         var image: UIImage? = nil
         let secondImage:UIImage = UIImage(named: "barra")!
-        let newImageSize: CGSize = CGSizeMake(max(firstImage.size.width, secondImage.size.width), 320)
+        let newImageSize: CGSize = CGSize(width: max(firstImage.size.width, secondImage.size.width), height: 320)
         UIGraphicsBeginImageContext(newImageSize)
-        firstImage.drawAtPoint(CGPointMake(0,0))
-        secondImage.drawAtPoint(CGPointMake(0,255))
+        firstImage.draw(at: CGPoint(x: 0,y: 0))
+        secondImage.draw(at: CGPoint(x: 0,y: 255))
         image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
         return image!
     }
-    func imageResize (imageObj:UIImage, sizeChange:CGSize)-> UIImage{
+    func imageResize (_ imageObj:UIImage, sizeChange:CGSize)-> UIImage{
         
         let hasAlpha = false
         let scale: CGFloat = 0.0 // Automatically use scale factor of main screen
         UIGraphicsBeginImageContextWithOptions(sizeChange, !hasAlpha, scale)
-        imageObj.drawInRect(CGRect(origin: CGPointZero, size: sizeChange))
+        imageObj.draw(in: CGRect(origin: CGPoint.zero, size: sizeChange))
         let scaledImage = UIGraphicsGetImageFromCurrentImageContext()
-        return scaledImage
+        return scaledImage!
     }
-    private func getDocumentsURL() -> NSURL {
-        let documentsURL = NSFileManager.defaultManager().URLsForDirectory(.DocumentDirectory, inDomains: .UserDomainMask)[0]
+    fileprivate func getDocumentsURL() -> URL {
+        let documentsURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
         return documentsURL
     }
-    private func fileInDocumentsDirectory(filename: String) -> String {
+    fileprivate func fileInDocumentsDirectory(_ filename: String) -> String {
         
-        let fileURL = getDocumentsURL().URLByAppendingPathComponent(filename)
-        return fileURL.path!
+        let fileURL = getDocumentsURL().appendingPathComponent(filename)
+        return fileURL.path
         
     }
 }
-enum BadImage: ErrorType {
-    case Empty
+enum BadImage: Error {
+    case empty
 }

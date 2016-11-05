@@ -30,11 +30,11 @@ private let reuseIdentifier = "Cell"
 class ProgramaSelector: UICollectionViewController, Observer {
     var data:Programa = Programa()   
     var avPlayer:AVPlayer = AVPlayer()
-    var timer:NSTimer?
+    var timer:Timer?
     override func viewDidLoad() {
         super.viewDidLoad()
         Crawler.sharedInstance.addObserver(self)
-        timer = NSTimer.scheduledTimerWithTimeInterval(5, target: self, selector: #selector(ProgramaSelector.update), userInfo: nil, repeats: true)
+        timer = Timer.scheduledTimer(timeInterval: 5, target: self, selector: #selector(ProgramaSelector.update), userInfo: nil, repeats: true)
         self.collectionView?.delegate = self
         
     }
@@ -64,20 +64,20 @@ class ProgramaSelector: UICollectionViewController, Observer {
     /**
      Establece una única sección para la colección
      */
-    override func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
+    override func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
     }
     /**
      Decimos el número de elementos que va a tener
      */
-    override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return self.data.episodios.count
     }
     /**
      Este método permite configurar cada celda con los datos necesarios
      */
-    override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        if let celda: EpisodioCell = collectionView.dequeueReusableCellWithReuseIdentifier("EpisodioCell", forIndexPath: indexPath) as? EpisodioCell
+    override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        if let celda: EpisodioCell = collectionView.dequeueReusableCell(withReuseIdentifier: "EpisodioCell", for: indexPath) as? EpisodioCell
         {
             let episodio = data.episodios[indexPath.row]
             celda.configurar(episodio, programa: data.titulo)
@@ -92,46 +92,46 @@ class ProgramaSelector: UICollectionViewController, Observer {
     /**
      Este método permite poner elementos en la cabecera (Header)
      */
-    override func collectionView(collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, atIndexPath indexPath: NSIndexPath) -> UICollectionReusableView {
-        let commentView = collectionView.dequeueReusableSupplementaryViewOfKind(kind, withReuseIdentifier: "Header", forIndexPath: indexPath) as! ViewHeaderPrograms
+    override func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        let commentView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "Header", for: indexPath) as! ViewHeaderPrograms
         commentView.logo = UIImageView(image: UIImage(named: "logo"))
         commentView.barra = UIImageView( image: UIImage(named: "barra"))
         return commentView
     }
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        let destinoController: AVPlayerViewController = segue.destinationViewController as! AVPlayerViewController
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let destinoController: AVPlayerViewController = segue.destination as! AVPlayerViewController
         let cell:EpisodioCell = sender as! EpisodioCell
-        let videoURL:NSURL = NSURL(string: cell.url)!
-        self.avPlayer = AVPlayer(URL: videoURL)
+        let videoURL:URL = URL(string: cell.url)!
+        self.avPlayer = AVPlayer(url: videoURL)
         destinoController.player = self.avPlayer
         destinoController.player?.play()
     }
-    override func collectionView(collectionView: UICollectionView, shouldSelectItemAtIndexPath indexPath: NSIndexPath) -> Bool {
-        if let indexPath = collectionView.indexPathsForSelectedItems()?.first {
-            collectionView.deselectItemAtIndexPath(indexPath, animated: true)
+    override func collectionView(_ collectionView: UICollectionView, shouldSelectItemAt indexPath: IndexPath) -> Bool {
+        if let indexPath = collectionView.indexPathsForSelectedItems?.first {
+            collectionView.deselectItem(at: indexPath, animated: true)
             return false
         }
         else {
             return true
         }
     }
-    override func collectionView(collectionView: UICollectionView, shouldUpdateFocusInContext context: UICollectionViewFocusUpdateContext) -> Bool {
-        guard let indexPaths = collectionView.indexPathsForSelectedItems() else { return true }
+    override func collectionView(_ collectionView: UICollectionView, shouldUpdateFocusIn context: UICollectionViewFocusUpdateContext) -> Bool {
+        guard let indexPaths = collectionView.indexPathsForSelectedItems else { return true }
         return indexPaths.isEmpty
     }
     /**
      Este método se encarga de establecer el foco
      */
    
-    override func didUpdateFocusInContext(context: UIFocusUpdateContext, withAnimationCoordinator coordinator: UIFocusAnimationCoordinator) {
+    override func didUpdateFocus(in context: UIFocusUpdateContext, with coordinator: UIFocusAnimationCoordinator) {
         coordinator.addCoordinatedAnimations({
-            context.previouslyFocusedView?.transform = CGAffineTransformIdentity
-            context.previouslyFocusedView?.layer.shadowColor = UIColor.clearColor().CGColor
-            context.nextFocusedView?.transform = CGAffineTransformMakeScale(1.10, 1.10)
-            context.nextFocusedView?.layer.shadowColor = UIColor.blackColor().CGColor
+            context.previouslyFocusedView?.transform = CGAffineTransform.identity
+            context.previouslyFocusedView?.layer.shadowColor = UIColor.clear.cgColor
+            context.nextFocusedView?.transform = CGAffineTransform(scaleX: 1.10, y: 1.10)
+            context.nextFocusedView?.layer.shadowColor = UIColor.black.cgColor
             context.nextFocusedView?.layer.shadowRadius = 8.0
-            context.nextFocusedView?.layer.shadowOffset = CGSizeMake(0,2)
+            context.nextFocusedView?.layer.shadowOffset = CGSize(width: 0,height: 2)
             context.nextFocusedView?.layer.shadowOpacity = 1.0
             }, completion: nil)
     }

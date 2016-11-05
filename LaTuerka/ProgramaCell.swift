@@ -30,7 +30,7 @@ class ProgramaCell: UICollectionViewCell {
     var url: String = ""
     var programa: Programa!
     @IBOutlet weak var cellTitle: UILabel!
-    func configurar(programa:Programa)
+    func configurar(_ programa:Programa)
     {
         self.programa = programa
         self.img.image = programa.image

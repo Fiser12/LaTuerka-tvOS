@@ -31,7 +31,7 @@ class EpisodioCell: UICollectionViewCell {
     var episodio:Episodio!
     
     @IBOutlet weak var cellTitle: UILabel!
-    func configurar(let episodio:Episodio, let programa:String)
+    func configurar(_ episodio:Episodio, programa:String)
     {
         self.episodio = episodio
         do {
