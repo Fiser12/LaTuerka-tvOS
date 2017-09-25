@@ -38,7 +38,7 @@ class Crawler: Observable{
     fileprivate init(){
         for programa in programas
         {
-            DispatchQueue.global(priority: DispatchQueue.GlobalQueuePriority.default).async(execute: {
+            DispatchQueue.global().async(execute: {
                 self.descargarProgramasBucle(Programa: programa, URL: programa.url)
                 DispatchQueue.main.async(execute: {
                     if let elemento:Observer = self.observable.filter({$0.observerID() == programa.titulo}).first{
@@ -105,23 +105,31 @@ class Crawler: Observable{
         }
         
     }
+    
     func obtenerURLVideo(URL urlActual: String) -> String
     {
-        var urlFinal:String = ""
-        if let urlNS:URL = URL(string: urlActual){
-            if let data:Data = try? Data(contentsOf: urlNS){
-                let doc = TFHpple(htmlData: data)
-                if let elements = doc?.search(withXPathQuery: "//div[@id='main']") as? [TFHppleElement] {
-                    if(elements.count != 0){
-                        if elements.count != 0{
-                            if elements[0].content.getURLs().count != 0{
-                                urlFinal = String(describing: elements[0].content.getURLs()[0])
-                            }
-                        }
-                    }
-                }
-            }
+        let urlFinal:String = "";
+        guard let myURL = URL(string: urlActual) else {
+            print("Error: \(urlActual) doesn't seem to be a valid URL")
+            return ""
         }
+        do {
+            let regex:String = "\\{\"file\":\"(.*)\",\"label\":"
+            let testStr = try String(contentsOf: myURL, encoding: .ascii)
+
+            let nsRegularExpression = try! NSRegularExpression(pattern: regex, options: [])
+            let matches = nsRegularExpression.matches(in: testStr, options: [], range: NSRange(location: 0, length: testStr.characters.count))
+            if matches.isEmpty{
+                return "";
+            }
+            for index in 1..<matches[0].numberOfRanges {
+                return ((testStr as NSString).substring(with: matches[0].range(at: index)))
+            }
+
+        } catch let error {
+            print("Error: \(error)")
+        }
+
         return urlFinal
     }
 }

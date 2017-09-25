@@ -47,7 +47,7 @@ class ProgramaSelector: UICollectionViewController, Observer {
         shouldRecognizeSimultaneouslyWithGestureRecognizer:UIGestureRecognizer) -> Bool {
             return true
     }
-    func update()
+    @objc func update()
     {
         self.collectionView?.reloadData()
     }

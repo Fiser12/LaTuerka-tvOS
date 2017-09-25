@@ -43,7 +43,7 @@ class ImagesManager{
                 if let data:Data = try? Data(contentsOf: urlNS){ //make sure your image in this url does exist, otherwise unwrap in a if let check
                     if let imagen:UIImage = UIImage(data: data){
                         let imagenProcesada:UIImage = imageByCombiningImage(imageResize(imagen, sizeChange:  CGSize(width: 495, height: 300)))
-                        saveImage(imagenProcesada, path: imagePath)
+                        _ = saveImage(imagenProcesada, path: imagePath)
                         return imagenProcesada
                     }
                     else{

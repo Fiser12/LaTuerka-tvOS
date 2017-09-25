@@ -2,9 +2,76 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8d552e23-90cc-4b51-bf91-7c898199b011" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets.xcassets/App Icon &amp; Top Shelf Image.brandassets/Top Shelf Image Wide.imageset/Contents.json" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets.xcassets/App Icon &amp; Top Shelf Image.brandassets/App Icon - Small.imagestack/Layer 1.imagestacklayer/Content.imageset/logo.png" afterPath="$PROJECT_DIR$/Assets.xcassets/App Icon &amp; Top Shelf Image.brandassets/App Icon - Small.imagestack/Layer 1.imagestacklayer/Content.imageset/logo.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets.xcassets/App Icon &amp; Top Shelf Image.brandassets/App Icon - Small.imagestack/Layer 2.imagestacklayer/Content.imageset/bg.png" afterPath="$PROJECT_DIR$/Assets.xcassets/App Icon &amp; Top Shelf Image.brandassets/App Icon - Small.imagestack/Layer 2.imagestacklayer/Content.imageset/bg.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets.xcassets/LaunchImage.launchimage/bg.png" afterPath="$PROJECT_DIR$/Assets.xcassets/LaunchImage.launchimage/bg.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets.xcassets/barra.imageset/Captura de pantalla 2016-02-11 a las 0.26.05.png" afterPath="$PROJECT_DIR$/Assets.xcassets/barra.imageset/Captura de pantalla 2016-02-11 a las 0.26.05.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets.xcassets/bg.imageset/bg.png" afterPath="$PROJECT_DIR$/Assets.xcassets/bg.imageset/bg.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets.xcassets/elTornillo.imageset/elTornillo.jpg" afterPath="$PROJECT_DIR$/Assets.xcassets/elTornillo.imageset/elTornillo.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets.xcassets/enClaveTuerka.imageset/enClaveTuerka.jpg" afterPath="$PROJECT_DIR$/Assets.xcassets/enClaveTuerka.imageset/enClaveTuerka.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets.xcassets/laKlau.imageset/laKlau.jpg" afterPath="$PROJECT_DIR$/Assets.xcassets/laKlau.imageset/laKlau.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets.xcassets/laTuerkaNews.imageset/laTuerkaNews.jpg" afterPath="$PROJECT_DIR$/Assets.xcassets/laTuerkaNews.imageset/laTuerkaNews.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets.xcassets/logo.imageset/La_Tuerka_Logo.png" afterPath="$PROJECT_DIR$/Assets.xcassets/logo.imageset/La_Tuerka_Logo.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets.xcassets/otraVueltaDeTuerka.imageset/otraVueltaDeTuerka.jpg" afterPath="$PROJECT_DIR$/Assets.xcassets/otraVueltaDeTuerka.imageset/otraVueltaDeTuerka.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets.xcassets/videoblogMonedero.imageset/videoblogMonedero.jpg" afterPath="$PROJECT_DIR$/Assets.xcassets/videoblogMonedero.imageset/videoblogMonedero.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LaTuerka.xcodeproj/project.xcworkspace/xcuserdata/Fiser.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/LaTuerka.xcodeproj/project.xcworkspace/xcuserdata/Fiser.xcuserdatad/UserInterfaceState.xcuserstate" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="$PROJECT_DIR$/.idea/.name" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/LaTuerka.iml" afterPath="$PROJECT_DIR$/.idea/LaTuerka.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/xcode.xml" afterPath="$PROJECT_DIR$/.idea/xcode.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets.xcassets/App Icon &amp; Top Shelf Image.brandassets/App Icon - Large.imagestack/Contents.json" afterPath="$PROJECT_DIR$/Assets.xcassets/App Icon &amp; Top Shelf Image.brandassets/App Icon - Large.imagestack/Contents.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets.xcassets/App Icon &amp; Top Shelf Image.brandassets/App Icon - Large.imagestack/Front.imagestacklayer/Content.imageset/Contents.json" afterPath="$PROJECT_DIR$/Assets.xcassets/App Icon &amp; Top Shelf Image.brandassets/App Icon - Large.imagestack/Front.imagestacklayer/Content.imageset/Contents.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets.xcassets/App Icon &amp; Top Shelf Image.brandassets/App Icon - Large.imagestack/Front.imagestacklayer/Contents.json" afterPath="$PROJECT_DIR$/Assets.xcassets/App Icon &amp; Top Shelf Image.brandassets/App Icon - Large.imagestack/Front.imagestacklayer/Contents.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets.xcassets/App Icon &amp; Top Shelf Image.brandassets/App Icon - Large.imagestack/Middle.imagestacklayer/Content.imageset/Contents.json" afterPath="$PROJECT_DIR$/Assets.xcassets/App Icon &amp; Top Shelf Image.brandassets/App Icon - Large.imagestack/Middle.imagestacklayer/Content.imageset/Contents.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets.xcassets/App Icon &amp; Top Shelf Image.brandassets/App Icon - Large.imagestack/Middle.imagestacklayer/Contents.json" afterPath="$PROJECT_DIR$/Assets.xcassets/App Icon &amp; Top Shelf Image.brandassets/App Icon - Large.imagestack/Middle.imagestacklayer/Contents.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets.xcassets/App Icon &amp; Top Shelf Image.brandassets/App Icon - Small.imagestack/Contents.json" afterPath="$PROJECT_DIR$/Assets.xcassets/App Icon &amp; Top Shelf Image.brandassets/App Icon - Small.imagestack/Contents.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets.xcassets/App Icon &amp; Top Shelf Image.brandassets/App Icon - Small.imagestack/Layer 1.imagestacklayer/Content.imageset/Contents.json" afterPath="$PROJECT_DIR$/Assets.xcassets/App Icon &amp; Top Shelf Image.brandassets/App Icon - Small.imagestack/Layer 1.imagestacklayer/Content.imageset/Contents.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets.xcassets/App Icon &amp; Top Shelf Image.brandassets/App Icon - Small.imagestack/Layer 1.imagestacklayer/Contents.json" afterPath="$PROJECT_DIR$/Assets.xcassets/App Icon &amp; Top Shelf Image.brandassets/App Icon - Small.imagestack/Layer 1.imagestacklayer/Contents.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets.xcassets/App Icon &amp; Top Shelf Image.brandassets/App Icon - Small.imagestack/Layer 2.imagestacklayer/Content.imageset/Contents.json" afterPath="$PROJECT_DIR$/Assets.xcassets/App Icon &amp; Top Shelf Image.brandassets/App Icon - Small.imagestack/Layer 2.imagestacklayer/Content.imageset/Contents.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets.xcassets/App Icon &amp; Top Shelf Image.brandassets/App Icon - Small.imagestack/Layer 2.imagestacklayer/Contents.json" afterPath="$PROJECT_DIR$/Assets.xcassets/App Icon &amp; Top Shelf Image.brandassets/App Icon - Small.imagestack/Layer 2.imagestacklayer/Contents.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets.xcassets/App Icon &amp; Top Shelf Image.brandassets/Contents.json" afterPath="$PROJECT_DIR$/Assets.xcassets/App Icon &amp; Top Shelf Image.brandassets/Contents.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets.xcassets/Contents.json" afterPath="$PROJECT_DIR$/Assets.xcassets/Contents.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets.xcassets/LaunchImage.launchimage/Contents.json" afterPath="$PROJECT_DIR$/Assets.xcassets/LaunchImage.launchimage/Contents.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets.xcassets/barra.imageset/Contents.json" afterPath="$PROJECT_DIR$/Assets.xcassets/barra.imageset/Contents.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets.xcassets/bg.imageset/Contents.json" afterPath="$PROJECT_DIR$/Assets.xcassets/bg.imageset/Contents.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets.xcassets/elTornillo.imageset/Contents.json" afterPath="$PROJECT_DIR$/Assets.xcassets/elTornillo.imageset/Contents.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets.xcassets/enClaveTuerka.imageset/Contents.json" afterPath="$PROJECT_DIR$/Assets.xcassets/enClaveTuerka.imageset/Contents.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets.xcassets/laKlau.imageset/Contents.json" afterPath="$PROJECT_DIR$/Assets.xcassets/laKlau.imageset/Contents.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets.xcassets/laTuerkaNews.imageset/Contents.json" afterPath="$PROJECT_DIR$/Assets.xcassets/laTuerkaNews.imageset/Contents.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets.xcassets/logo.imageset/Contents.json" afterPath="$PROJECT_DIR$/Assets.xcassets/logo.imageset/Contents.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets.xcassets/otraVueltaDeTuerka.imageset/Contents.json" afterPath="$PROJECT_DIR$/Assets.xcassets/otraVueltaDeTuerka.imageset/Contents.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets.xcassets/videoblogMonedero.imageset/Contents.json" afterPath="$PROJECT_DIR$/Assets.xcassets/videoblogMonedero.imageset/Contents.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LICENSE.md" afterPath="$PROJECT_DIR$/LICENSE.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LaTuerka.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/LaTuerka.xcodeproj/project.pbxproj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LaTuerka.xcodeproj/project.xcworkspace/contents.xcworkspacedata" afterPath="$PROJECT_DIR$/LaTuerka.xcodeproj/project.xcworkspace/contents.xcworkspacedata" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LaTuerka.xcodeproj/xcuserdata/Fiser.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist" afterPath="$PROJECT_DIR$/LaTuerka.xcodeproj/xcuserdata/Fiser.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LaTuerka.xcodeproj/xcuserdata/Fiser.xcuserdatad/xcschemes/LaTuerka.xcscheme" afterPath="$PROJECT_DIR$/LaTuerka.xcodeproj/xcuserdata/Fiser.xcuserdatad/xcschemes/LaTuerka.xcscheme" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LaTuerka.xcodeproj/xcuserdata/Fiser.xcuserdatad/xcschemes/xcschememanagement.plist" afterPath="$PROJECT_DIR$/LaTuerka.xcodeproj/xcuserdata/Fiser.xcuserdatad/xcschemes/xcschememanagement.plist" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LaTuerka/AppDelegate.swift" afterPath="$PROJECT_DIR$/LaTuerka/AppDelegate.swift" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LaTuerka/Base.lproj/Main.storyboard" afterPath="$PROJECT_DIR$/LaTuerka/Base.lproj/Main.storyboard" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LaTuerka/Crawler.swift" afterPath="$PROJECT_DIR$/LaTuerka/Crawler.swift" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LaTuerka/Episodio.swift" afterPath="$PROJECT_DIR$/LaTuerka/Episodio.swift" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LaTuerka/EpisodioCell.swift" afterPath="$PROJECT_DIR$/LaTuerka/EpisodioCell.swift" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LaTuerka/ImagesManager.swift" afterPath="$PROJECT_DIR$/LaTuerka/ImagesManager.swift" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LaTuerka/Info.plist" afterPath="$PROJECT_DIR$/LaTuerka/Info.plist" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LaTuerka/LaTuerka-Bridging-Header.h" afterPath="$PROJECT_DIR$/LaTuerka/LaTuerka-Bridging-Header.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LaTuerka/Model.xcdatamodeld/Model.xcdatamodel/contents" afterPath="$PROJECT_DIR$/LaTuerka/Model.xcdatamodeld/Model.xcdatamodel/contents" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LaTuerka/Observable.swift" afterPath="$PROJECT_DIR$/LaTuerka/Observable.swift" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LaTuerka/Observer.swift" afterPath="$PROJECT_DIR$/LaTuerka/Observer.swift" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LaTuerka/Programa.swift" afterPath="$PROJECT_DIR$/LaTuerka/Programa.swift" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LaTuerka/ProgramaCell.swift" afterPath="$PROJECT_DIR$/LaTuerka/ProgramaCell.swift" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LaTuerka/ProgramaSelector.swift" afterPath="$PROJECT_DIR$/LaTuerka/ProgramaSelector.swift" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LaTuerka/ViewController.swift" afterPath="$PROJECT_DIR$/LaTuerka/ViewController.swift" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LaTuerka/ViewHeaderPrograms.swift" afterPath="$PROJECT_DIR$/LaTuerka/ViewHeaderPrograms.swift" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LaTuerka/es.lproj/Main.strings" afterPath="$PROJECT_DIR$/LaTuerka/es.lproj/Main.strings" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LaTuerkaTests/Info.plist" afterPath="$PROJECT_DIR$/LaTuerkaTests/Info.plist" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LaTuerkaTests/LaTuerkaTests.swift" afterPath="$PROJECT_DIR$/LaTuerkaTests/LaTuerkaTests.swift" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <ignored path="LaTuerka.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -15,31 +82,50 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="appletvsimulator_71E5CB55-89C2-4333-BE11-7495AF85F5E5" />
   <component name="FavoritesManager">
     <favorites_list name="LaTuerka" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="Crawler.swift" pinned="false" current-in-tab="false">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="Crawler.swift" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/LaTuerka/Crawler.swift">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="92">
+              <caret line="108" column="21" lean-forward="false" selection-start-line="108" selection-start-column="21" selection-end-line="108" selection-end-column="21" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AppDelegate.swift" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ImagesManager.swift" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/LaTuerka/ImagesManager.swift">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ViewHeaderPrograms.swift" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/LaTuerka/ViewHeaderPrograms.swift">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AppDelegate.swift" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/LaTuerka/AppDelegate.swift">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.19117647">
-              <caret line="10" column="11" selection-start-line="10" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+            <state relative-caret-position="-121">
+              <caret line="10" column="11" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -55,21 +141,11 @@
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" fullScreen="true">
     <option name="x" value="4" />
     <option name="y" value="23" />
     <option name="width" value="1276" />
     <option name="height" value="777" />
-  </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
-    <OptionsSetting value="true" id="Add" />
-    <OptionsSetting value="true" id="Remove" />
-    <OptionsSetting value="true" id="Checkout" />
-    <OptionsSetting value="true" id="Update" />
-    <OptionsSetting value="true" id="Status" />
-    <OptionsSetting value="true" id="Edit" />
-    <ConfirmationsSetting value="0" id="Add" />
-    <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -88,113 +164,93 @@
     <panes>
       <pane id="ProjectPane">
         <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeRootNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LaTuerka" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeRootNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LaTuerka" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Products" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeRootNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LaTuerka" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LaTuerkaTests" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeRootNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LaTuerka" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LaTuerka" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeRootNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LaTuerka" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LaTuerka" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Controller" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
-            </PATH_ELEMENT>
-          </PATH>
+          <expand>
+            <path>
+              <item name="" type="efc3779f:XcodeRootNode" />
+              <item name="LaTuerka" type="1d218c8b:XcodeProjectNode" />
+            </path>
+            <path>
+              <item name="" type="efc3779f:XcodeRootNode" />
+              <item name="LaTuerka" type="1d218c8b:XcodeProjectNode" />
+              <item name="LaTuerka" type="fcab9f18:XcodeViewNode" />
+            </path>
+            <path>
+              <item name="" type="efc3779f:XcodeRootNode" />
+              <item name="LaTuerka" type="1d218c8b:XcodeProjectNode" />
+              <item name="LaTuerka" type="fcab9f18:XcodeViewNode" />
+              <item name="Controller" type="fcab9f18:XcodeViewNode" />
+            </path>
+          </expand>
+          <select />
         </subPane>
       </pane>
       <pane id="Cidr.FilesView" />
     </panes>
   </component>
-  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="web.server" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.LaTuerka">
+    <configuration name="LaTuerka" type="AppleRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="LaTuerka" TARGET_NAME="LaTuerka" CONFIG_NAME="Release" SCHEME_NAME="LaTuerka" RUN_TARGET_PROJECT_NAME="LaTuerka" RUN_TARGET_NAME="LaTuerka" MAKE_ACTIVE="TRUE">
+      <envs />
+      <EXTENSION ID="org.jetbrains.appcode.reveal.RevealRunConfigurationExtension">
+        <REVEAL_SETTINGS autoInject="false" autoInstall="true" askToEnableAutoInstall="true" />
+      </EXTENSION>
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="8d552e23-90cc-4b51-bf91-7c898199b011" name="Default" comment="" />
       <created>1456685819288</created>
       <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
       <updated>1456685819288</updated>
+      <workItem from="1506371884871" duration="463000" />
     </task>
     <servers />
   </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="463000" />
+  </component>
   <component name="ToolWindowManager">
-    <frame x="4" y="23" width="1276" height="777" extended-state="6" />
-    <editor active="false" />
+    <frame x="0" y="0" width="1280" height="800" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24921875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32933334" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32933334" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -207,19 +263,66 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/LaTuerka/Crawler.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/LaTuerka/AppDelegate.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.19117647">
-          <caret line="10" column="11" selection-start-line="10" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        <state relative-caret-position="140">
+          <caret line="10" column="11" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/LaTuerka/AppDelegate.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-121">
+          <caret line="10" column="11" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LaTuerka/ImagesManager.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LaTuerka/ViewHeaderPrograms.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LaTuerka/Crawler.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="108" column="21" lean-forward="false" selection-start-line="108" selection-start-column="21" selection-end-line="108" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>
